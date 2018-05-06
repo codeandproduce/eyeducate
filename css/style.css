@@ -11,12 +11,12 @@ body{
 
 }
 .contain_big_nav{
-	background-color:white;
+	background-color: silver;
 	position:absolute;
 	display:block;
-	left:-1000px;
+	left:0px;
 	height:100%;
-	width:300px;
+	width:1000px;
 	z-index:100;
 }
 input[type=text]:focus {
