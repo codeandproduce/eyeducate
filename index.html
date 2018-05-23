@@ -1,14 +1,24 @@
 <html>
 	<head>
-		 <link rel="stylesheet" href="css/bootstrap.min.css">
-
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<style>
+			.contain-big-nav{
+				left:-1000px;
+			}
+			.close-big-nav{
+				width:50px;
+				height:50px;
+
+			}
+		</style>
 	</head>
 
 	<body>
-		<div class="contain_big_nav" style="display:block; top:0px; bottom: 0px;">
+		<div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
 			<div class="row nav-content">
 					<div class="col-md-6 nav-left" style="text-align: center; height: 100%; margin-top: 250px;">
+							<button id="close-big-nav">Close</button>
 							<ol style="list-style: none; padding: 0; padding-top: 10px; padding-bottom: 30px;">
 								<li>Home</li>
 								<li>I Like To Do Stuff</li>
@@ -27,8 +37,8 @@
 			<!-- Thai Sheng, insert your work here. -->
 
 		</div>
-		<div class="nav" style="z-index:1">
-			<div class="menu_left">
+		<div class="nav" style="z-index:2">
+			<div class="menu-left">
 				<button id="menu_button" class="menu-button">
 		            <span class="menu-button-span shorter-span shorter-span-right"></span>
 		            <span class="menu-button-span span-center"></span>
@@ -44,7 +54,7 @@
 			</div>
 		</div>
 		<div class="contain">
-			<div class="row first_slide">
+			<div class="row first-slide">
 				<div class="col-md-7">
 					<div class="contain">
 						<img class="first_big_image" src="img/bighead.png"/>
@@ -79,35 +89,39 @@
 				</h1>
 			</div>
 			<div class="recent_events">
-				<div class="text-center">
+				<div class="recent-events-heading">
 					<img src="img/lightbulb.png" class="lightbulb">
-					<h1 style="padding-bottom:10px;" id="recent_events">Recent Events</h1>
+					<h1 style="padding-bottom:10px;" class="heading-h1">Recent Events</h1>
 				</div>
-				<div class="row recent_events_description">
-					<div class="col-sm-4"><img src="img/recent_events.png">
-					<p>Text Here</p>
+				<div class="row">
+					<style>
+
+					</style>
+					<div class="recent-event-inside col-sm-4">
+						<img class="recent-event-inside-img" src="img/recent_events.png">
+						<p class="recent-event-inside-des">Text Here</p>
 					</div>
-					<div class="col-sm-4"><img src="img/recent_events.png">
-					<p>Text Here</p>
+					<div class="recent-event-inside col-sm-4">
+						<img class="recent-event-inside-img" src="img/recent_events.png">
+						<p class="recent-event-inside-des">Text Here</p>
 					</div>
-					<div class="col-sm-4"><img src="img/recent_events.png">
-					<p>Text Here</p>
+					<div class="recent-event-inside col-sm-4">
+						<img class="recent-event-inside-img" src="img/recent_events.png">
+						<p class="recent-event-inside-des">Text Here</p>
 					</div>
 				</div>
-				<div class="social-right">
-					<a href="https://google.com"><img class="social-email" src="img/social_email.png"></a>
-					<a href="https://instagram.com"><img class="social-insta" src="img/social_insta.png"></a>
-				</div>
+			
 
 
 			</div>
-		<script src="scripts/jquery-3.2.1.js"/>
+		<script src="scripts/jquery-3.2.1.js"/>f
 		<script src="scripts/bootstrap.min.js"></script>
 		<script src="scripts/jq.js"/>
 
 		<script>
 			$("#menu_button").click(function(){
-				$(".contain_big_nav").css('left','0px');
+				console.log("clicked!");
+				$(".contain-big-nav").css('left','0px');
 			});
 		</script>
 	</body>
