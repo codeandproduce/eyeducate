@@ -184,3 +184,65 @@ body{
 	height:50px;
 	display:inline-block;
 }
+.eye_news{
+	padding:20px;
+}
+.eye-news-contain-nested-row{
+	margin-bottom:30px;
+}
+.contain-big-nav{
+	left:-1000px;
+}
+.close-big-nav{
+	width:50px;
+	height:50px;
+
+}
+.third-slide{
+	position:relative !important;
+	width:100%;
+	height:80%;
+	background-image: url('img/third-slide.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.contain-third-slide-content{
+	width:1000px;
+	height:100px;
+	display:inline;
+	margin:auto;
+	padding-top:400px;
+}
+.third-slide-content-inside{
+	display:inline-block;
+	width:150px;
+	height:50px;
+}
+.media-third{
+	margin-right:150px;
+}
+.inside-third-slide-box{
+	border:1px solid white;
+	padding:20px;
+
+}
+.eyenewspic{
+
+  width:100%;
+}
+
+.eye_news_banner{
+  margin:0;
+  width:100%;
+  height:15%;
+}
+.center{
+text-align: center;
+}
+.eye_news {
+  margin:0;
+  width:100%;
+  height:100%;
+}
