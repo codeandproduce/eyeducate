@@ -66,6 +66,33 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.contain-instagram {
+	width:80%;
+	display:inline-block;
+}
+
+.instagram-heading{
+	padding:50px;
+}
+
+.insta-p {
+	display:block;
+	margin:auto;
+	width:300px;
+	text-align:center;
+	font-style: italic;
+	color:#000000;
+}
+
+.insta-h1 {
+	display:block;
+	margin:auto;
+	width:300px;
+	text-align:center;
+	color:#000000;
+}
+
 .first_big_image{
 	padding:20px;
 	width:100%;
