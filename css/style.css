@@ -94,6 +94,7 @@ body{
 }
 
 .first_big_image{
+	margin-top:40px;
 	padding:20px;
 	width:100%;
 }
