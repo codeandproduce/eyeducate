@@ -19,7 +19,7 @@ $(document).on('click', '.menu-button', function(){
   }else{
     $('.shorter-span-left').css('transform','translate(0,0) rotate(0deg)  scale(1)');
     $('.shorter-span-right').css('transform','translate(0px,0) rotate(0deg) scale(1)');
-    $('.span-center').css('height','2px');
+    $('.span-center').css('height','4px');
 
     $(".contain-big-nav").css('left','-1000px');
 
