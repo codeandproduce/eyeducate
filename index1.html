@@ -2,154 +2,48 @@
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<style>
+			.contain-big-nav{
+				left:-1000px;
+			}
+			.close-big-nav{
+				width:50px;
+				height:50px;
+
+			}
+		</style>
 	</head>
 
 	<body>
 		<div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
-			<div class="nav-content nav-left" style="text-align: center; height: 100%">
-				<ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
-					<li><a href="/"><i class="current-page">Home</i></a></li>
-					<li><a href="/about"><i>About Us</i></a></li>
-					<li><a href="/about"><i>Our Story</i></a></li>
-					<li><a href="/about"><i>Events</i></a></li>
-					<li><a href="/about"><i>EYE news</i></a></li>
-					<li><a href="/about"><i>Impact</i></a></li>
-					<li><a href="/about"><i>Media</i></a></li>
-				</ol>
+			<div class="row nav-content">
+					<div class="col-md-6 nav-left" style="text-align: center; height: 100%; margin-top: 250px;">
+							<button id="close-big-nav">Close</button>
+							<ol style="list-style: none; padding: 0; padding-top: 10px; padding-bottom: 30px;">
+								<li>Home</li>
+								<li>I Like To Do Stuff</li>
+								<li>About Thai Sheng the shitter</li>
+								<li>About my body</li>
+							</ol>
+					</div>
+					<div class="col-md-6 nav-right" style="height:100%; text-align: center; margin-top: 215px;">
+						<h1>Subscribe</h1>
+						<form>
+							<input type="text" id="email" placeholder="Email Address">
+						</form>
+						<button style="background-color: none; font-size:20px; text-align:center; color: black; border: black;"> SIGN UP </button>
+					</div>
 			</div>
 
-			<style>
-				.nav-left{
-					width:55%;
-					display:inline;
-					float:left;
-				}
-				.nav-right{
-					width:45%;
-					display:inline;
-					float:right;
-				}
-				.current-page{
-					text-decoration: underline;
-					opacity:0.7;
-				}
-				.contain-toggle-nav-links{
-				    position: absolute;
-					left: 25%;
-					top: 30%;
-
-				}
-				.contain-toggle-nav-links > li{
-					font-weight:100;
-					font-size:17px;
-					margin-bottom:15px;
-				}
-				.contain-toggle-nav-links > li > a{
-					color:black;
-				}
-				.contain-toggle-nav-links > li > a:hover{
-					opacity:0.7;
-				}
-				.line-break{
-					position:absolute;
-					left:55%;
-					height:90%;
-					margin-top:5%;
-					width:1px;
-					background-color:rgba(235,235,235,0.8);
-				}
-
-				.nav-right{
-					padding:30px;
-					padding-top:6%;
-				}
-				.nav-right > h1{
-					border-top:1px solid rgba(235,235,235,0.8);
-					width:80%;
-					display:block;
-					margin:auto;
-					padding-top:45px;
-					font-size:25px;
-					letter-spacing:0.5px;
-				}
-
-				.subscribe-text-input{
-					margin-top:30px;
-					padding:15px 29px;
-					margin-bottom:5px;
-					width:80%;
-				}
-				.subscribe-text-input:focus{
-					outline:0;
-				}
-				.subscribe-button-nav{
-					margin-top:3px;
-					font-weight:600;
-					border:2px solid black;
-					background-color:none;
-					padding:10px 28px;
-					font-size:15px;
-				}
-				.subscribe-button-nav:hover{
-					text-decoration: underline;
-					color:white;
-					background-color:black;
-				}
-				.nav-toggle-poem{
-					width:80%;
-					display:block;
-					margin:auto;
-					border-top:1px solid rgba(235,235,235,0.8);
-					padding-top:45px;
-					margin-bottom:45px;
-					text-align:center;
-					line-height:30px;
-					font-style: oblique;
-				}
-				.nav-toggle-logo{
-					width:80%;
-					display:block;
-					margin:auto;
-					margin-bottom:70px;
-				}
-
-				
-				.menu-left{
-					display:block;
-					z-index:100;
-					position:fixed;
-				}
-				.menu-left:focus{
-					outline:0 !important;
-				}
-			</style>
-			<div class="line-break">
-			</div>
-
-			<div class="nav-right" style="text-align: center;">
-				<img class="nav-toggle-logo" src="img/nav_logo.png">
-				<div class="nav-toggle-poem">
-				“No one has ever become poor by giving.” </br>
-				-Anne Frank
-
-				</div>
-				<h1><i>Subscribe</i></h1>
-				<form>
-					<input class="subscribe-text-input" type="text" id="email" placeholder="Email Address">
-				</form>
-				<button class="subscribe-button-nav">SIGN UP</button>
-			</div>
-			
 		</div>
-		<div class="menu-left">
+		<div class="nav" style="z-index:2">
+			<div class="menu-left">
 				<button id="menu_button" class="menu-button">
 		            <span class="menu-button-span shorter-span shorter-span-right"></span>
 		            <span class="menu-button-span span-center"></span>
 		            <span class="menu-button-span shorter-span shorter-span-left"></span>
           		</button>
-		</div>
-		<div class="nav" style="z-index:2">
-			
+			</div>
 			<div class="logo_center">
 				<img class="nav_logo" src="img/nav_logo.png">
 			</div>
@@ -199,7 +93,9 @@
 					<h1 style="padding-bottom:10px;" class="heading-h1">Recent Events</h1>
 				</div>
 				<div class="row">
+					<style>
 
+					</style>
 					<div class="recent-event-inside col-sm-4">
 						<img class="recent-event-inside-img" src="img/recent_events.png">
 						<p class="recent-event-inside-des">Text Here</p>
@@ -213,13 +109,18 @@
 						<p class="recent-event-inside-des">Text Here</p>
 					</div>
 				</div>
-
-
 			</div>
 				<div class="eye_news_banner">
 				  <h1 class="center">EYE NEWS</h1>
 				</div>
-
+				<style>
+					.eye_news{
+						padding:20px;
+					}
+					.eye-news-contain-nested-row{
+						margin-bottom:30px;
+					}
+				</style>
 				<div class="eye_news">
 				  <div class="col-md-6">
 				    <div class="row eye-news-contain-nested-row">
@@ -287,14 +188,42 @@
 				  </div>
 			</div>
 
+			<style>
+				.third-slide{
+					position:relative !important;
+					width:100%;
+					height:80%;
+					background-image: url('img/third-slide.jpg');
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
 
+				}
+				.contain-third-slide-content{
+					width:1000px;
+					height:100px;
+					display:inline;
+					margin:auto;
+					padding-top:400px;
+				}
+				.third-slide-content-inside{
+					display:inline-block;
+					width:150px;
+					height:50px;
+				}
+				.media-third{
+					margin-right:150px;
+				}
+				.inside-third-slide-box{
+					border:1px solid white;
+					padding:20px;
 
-			<div class="third_slide_pic third-slide">
+				}
 
+			</style>
 			<div class="third-slide second_slide_pic">
-
 				<div class="contain-third-slide-content">
-					<div class="third-slide-content-inside media-third">
+					<div class="third-slide-content-inside  media-third">
 						<h2 class="inside-third-slide-content"><i>MEDIA</i></h2>
 						<div class="inside-third-slide-box">
 							<p>follow us in our journey</p>
@@ -308,20 +237,31 @@
 					</div>
 				</div>
 			</div>
-			<!-- SnapWidget -->
-			<div class="contain-instagram">
-				<div class="instagram-heading">
-					<p style="padding-bottom:10px;" class="insta-p">
-						Stay Updated
-					</p>
-					<h1 style="padding-bottom:40px;" class="insta-h1">
-						FOLLOW US
-					</h1>
-					<script src="https://snapwidget.com/js/snapwidget.js"></script>
-					<iframe src="https://snapwidget.com/embed/548566" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-				</div>
-			</div>
 
+
+
+<style>
+
+
+.eyenewspic{
+
+  width:100%;
+}
+
+.eye_news_banner{
+  margin:0;
+  width:100%;
+  height:15%;
+}
+.center{
+text-align: center;
+}
+.eye_news {
+  margin:0;
+  width:100%;
+  height:100%;
+}
+</style>
 		<script src="scripts/jquery-3.2.1.js"/>f
 		<script src="scripts/bootstrap.min.js"></script>
 		<script src="scripts/jq.js"/>
