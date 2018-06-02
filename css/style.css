@@ -43,9 +43,7 @@ body{
 }
 
 .second_slide_pic{
-	position: relative;
-	text-align: center;
-	color: white;
+
 }
 .third_slide_pic{
 	position: relative;
@@ -53,18 +51,16 @@ body{
 	color: white;
 }
 .centered_up {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+	color: white;
+ padding-top: 326px;
 	text-align: center;
-	transform: translate(-50%, -50%);
+
 }
 .centered_down {
-	margin-top:30px;
-	position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	margin-top:20px;
+  text-align:center;
+	color:white;
+
 }
 
 .contain-instagram {
