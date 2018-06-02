@@ -323,5 +323,19 @@ text-align: center;
   margin:0;
   width:100%;
   height:100%;
-
+}
+.profile-slide {
+	display:block;
+	margin:auto;
+	width:80%;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 100px;
+	height:150%;
+}
+.temp-resize {
+	height:15%;
+}
+.centered {
+	text-align: center;
 }
