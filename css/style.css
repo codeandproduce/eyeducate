@@ -356,3 +356,37 @@ text-align: center;
 	margin: auto;
 	display: block;
 }
+
+.partners {
+	display:block;
+	margin:auto;
+	height:100%;
+	width:70%;
+	padding:50px;
+}
+
+.partners-heading{
+	text-align: center;
+	color: #b4b6c3;
+}
+
+.eye-love {
+	text-align:center;
+	display:block;
+	padding: 50px;
+}
+
+.eye-love-description {
+	text-align: center;
+	padding: 30px;
+}
+
+.other-partners {
+	text-align:center;
+	display:block;
+}
+
+.safe-kids-description {
+	text-align: center;
+	padding: 30px;
+}
