@@ -28,3 +28,26 @@ $(document).on('click', '.menu-button', function(){
     menuOpened = false;
   }
 });
+
+
+$(window).scroll(function() {
+  parallax();
+});
+
+function parallax() {
+
+  var wScroll = $(window).scrollTop()
+  console.log("($(document).height()/4)*2 height", ($(document).height()/4)*2);
+  console.log("scroll: "+wScroll);
+
+  $('.floating-box').css('top', 33 + (wScroll*.015)+'em')
+
+
+  if(wScroll > ($(document).height()/4.5)*2){
+    $('.third-slide').css('background-position', 'center ' + (wScroll*0.025)+'px');
+  }else{
+    $('.second-slide').css('background-position', 'center ' + (wScroll*0.05)+'px');
+  }
+
+
+}
