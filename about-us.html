@@ -6,34 +6,150 @@
 
 	<body>
 		<div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
-			<div class="col-md-6 nav-content nav-left" style="text-align: center; height: 100%;  border-right-style: double;">
-							<button id="close-big-nav">Close</button>
-							<ol style="list-style: none; padding: 0; padding-top: 10px; padding-bottom: 30px;">
-								<li>Home</li>
-								<li>I Like To Do Stuff</li>
-								<li>About Thai Sheng the shitter</li>
-								<li>About my body</li>
-							</ol>
+			<div class="nav-content nav-left" style="text-align: center; height: 100%">
+				<ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
+					<li><a href="/"><i class="current-page">Home</i></a></li>
+					<li><a href="/about"><i>About Us</i></a></li>
+					<li><a href="/about"><i>Our Story</i></a></li>
+					<li><a href="/about"><i>Events</i></a></li>
+					<li><a href="/about"><i>EYE news</i></a></li>
+					<li><a href="/about"><i>Impact</i></a></li>
+					<li><a href="/about"><i>Media</i></a></li>
+				</ol>
 			</div>
 
-				<div class="col-md-6 nav-right" style="text-align: center;">
-						<h1 style="border-top-style: double;">Subscribe</h1>
-						<form>
-							<input type="text" id="email" placeholder="Email Address">
-						</form>
-						<button style="background-color: none; font-size:20px; text-align:center; color: black; border: black;"> SIGN UP </button>
-					</div>
+			<style>
+				.nav-left{
+					width:55%;
+					display:inline;
+					float:left;
+				}
+				.nav-right{
+					width:45%;
+					display:inline;
+					float:right;
+				}
+				.current-page{
+					text-decoration: underline;
+					opacity:0.7;
+				}
+				.contain-toggle-nav-links{
+				    position: absolute;
+					left: 25%;
+					top: 30%;
+
+				}
+				.contain-toggle-nav-links > li{
+					font-weight:100;
+					font-size:17px;
+					margin-bottom:15px;
+				}
+				.contain-toggle-nav-links > li > a{
+					color:black;
+				}
+				.contain-toggle-nav-links > li > a:hover{
+					opacity:0.7;
+				}
+				.line-break{
+					position:absolute;
+					left:55%;
+					height:90%;
+					margin-top:5%;
+					width:1px;
+					background-color:rgba(235,235,235,0.8);
+				}
+
+				.nav-right{
+					padding:30px;
+					padding-top:6%;
+				}
+				.nav-right > h1{
+					border-top:1px solid rgba(235,235,235,0.8);
+					width:80%;
+					display:block;
+					margin:auto;
+					padding-top:45px;
+					font-size:25px;
+					letter-spacing:0.5px;
+				}
+
+				.subscribe-text-input{
+					margin-top:30px;
+					padding:15px 29px;
+					margin-bottom:5px;
+					width:80%;
+				}
+				.subscribe-text-input:focus{
+					outline:0;
+				}
+				.subscribe-button-nav{
+					margin-top:3px;
+					font-weight:600;
+					border:2px solid black;
+					background-color:none;
+					padding:10px 28px;
+					font-size:15px;
+				}
+				.subscribe-button-nav:hover{
+					text-decoration: underline;
+					color:white;
+					background-color:black;
+				}
+				.nav-toggle-poem{
+					width:80%;
+					display:block;
+					margin:auto;
+					border-top:1px solid rgba(235,235,235,0.8);
+					padding-top:45px;
+					margin-bottom:45px;
+					text-align:center;
+					line-height:30px;
+					font-style: oblique;
+				}
+				.nav-toggle-logo{
+					width:80%;
+					display:block;
+					margin:auto;
+					margin-bottom:70px;
+				}
+
+
+				.menu-left{
+					display:block;
+					z-index:100;
+					position:fixed;
+				}
+				.menu-left:focus{
+					outline:0 !important;
+				}
+			</style>
+			<div class="line-break">
+			</div>
+
+			<div class="nav-right" style="text-align: center;">
+				<img class="nav-toggle-logo" src="img/nav_logo.png">
+				<div class="nav-toggle-poem">
+				“No one has ever become poor by giving.” </br>
+				-Anne Frank
+
+				</div>
+				<h1><i>Subscribe</i></h1>
+				<form>
+					<input class="subscribe-text-input" type="text" id="email" placeholder="Email Address">
+				</form>
+				<button class="subscribe-button-nav">SIGN UP</button>
 			</div>
 
 		</div>
-		<div class="nav" style="z-index:2">
-			<div class="menu-left">
+		<div class="menu-left">
 				<button id="menu_button" class="menu-button">
 		            <span class="menu-button-span shorter-span shorter-span-right"></span>
 		            <span class="menu-button-span span-center"></span>
 		            <span class="menu-button-span shorter-span shorter-span-left"></span>
           		</button>
-			</div>
+		</div>
+		<div class="nav" style="z-index:2;">
+
 			<div class="logo_center">
 				<img class="nav_logo" src="img/nav_logo.png">
 			</div>
@@ -42,6 +158,113 @@
 				<a href="https://instagram.com"><img class="social-insta" src="img/social_insta.png"></a>
 			</div>
 		</div>
+
+
+
+			<div class="contain profile-slide">
+				<div class="row">
+					<h1 class="centered">MEMBERS</h1>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+					<div class="col-md-2">
+						<img class="temp-resize" src="img/placeholder-1.png" alt="me funny, you not">
+					</div>
+				</div>
+			</div>
+
+			<div class="profile-description">
+				<div class="row description-detail">
+					<div class="col-md-4">
+						<img src="img/placeholder-1.png">
+					</div>
+					<div class="col-md-8">
+						<h1>First Last</h1>
+						<h2>Title: Member</h2>
+						<p style="font-size:22.5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+							aliquam metus ut justo fermentum sodales. In porttitor et metus
+							eget sollicitudin. Proin in mi odio. Etiam congue sem in dui
+							egestas congue. Cras vestibulum purus eu ante consequat, et ornare
+							 leo egestas. Vivamus mauris massa, auctor vel leo quis, imperdiet
+							  euismod ante. Maecenas tempus libero velit, a hendrerit ligula
+								efficitur eu.</h3>
+					</div>
+				</div>
+				<div class="row">
+					<img class="description-video" src="img/placeholder-2.png">
+				</div>
+			</div>
+
+			<div class="partners">
+				<h1 class="partners-heading">PARTNERS</h1>
+				<div class="eye-love">
+					<img src="img/eye_love.png">
+					<p class="eye-love-description">
+						Eye Love Vision Fund • 看见爱视光基金
+					</p>
+				</div>
+				<div class="other-partners">
+					<img src="img/other_partners.png">
+					<p class="safe-kids-description">
+						Safe Kids China • 全国儿童安全组织
+					</p>
+				</div>
+			</div>
+
 
 		<script src="scripts/jquery-3.2.1.js"/>f
 		<script src="scripts/bootstrap.min.js"></script>
