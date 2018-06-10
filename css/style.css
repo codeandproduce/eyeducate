@@ -43,7 +43,9 @@ body{
 }
 
 .second_slide_pic{
-
+	position: relative;
+	text-align: center;
+	color: white;
 }
 .third_slide_pic{
 	position: relative;
@@ -54,9 +56,8 @@ body{
 	position: absolute;
 	top: 45%;
 	left: 50%;
-
 	text-align: center;
-
+	transform: translate(-50%, -50%);
 }
 .centered-down {
 	margin-top:30px;
@@ -310,70 +311,5 @@ text-align: center;
   margin:0;
   width:100%;
   height:100%;
-}
-.profile-slide {
-	display:inline-block;
-	margin:auto;
-	width:100%;
-	height:80%;
-	padding: 100px
-}
-.temp-resize {
-	height: 35%;
-	margin:auto;
-	display:block;
-}
-.profile-description {
-	display:block;
-	margin:auto;
-	height:150%;
-	width:80%;
-	background-color:silver;
-}
-.description-detail {
-	padding:30px;
-}
 
-.centered {
-	text-align: center;
-}
-.description-video{
-	width: 85%;
-	height: auto;
-	margin: auto;
-	display: block;
-}
-
-.partners {
-	display:block;
-	margin:auto;
-	height:100%;
-	width:70%;
-	padding:50px;
-}
-
-.partners-heading{
-	text-align: center;
-	color: #b4b6c3;
-}
-
-.eye-love {
-	text-align:center;
-	display:block;
-	padding: 50px;
-}
-
-.eye-love-description {
-	text-align: center;
-	padding: 30px;
-}
-
-.other-partners {
-	text-align:center;
-	display:block;
-}
-
-.safe-kids-description {
-	text-align: center;
-	padding: 30px;
 }
