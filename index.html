@@ -19,141 +19,7 @@
 			</div>
 
 			<style>
-			*{
-				box-sizing: border-box;
-			}
-				.nav-left{
-					width:55%;
-					display:inline;
-					float:left;
-				}
-				.nav-right{
-					width:45%;
-					display:inline;
-					float:right;
-				}
-				.current-page{
-					text-decoration: underline;
-					opacity:0.7;
-				}
-				.contain-toggle-nav-links{
-				    position: absolute;
-					left: 25%;
-					top: 30%;
-
-				}
-				.contain-toggle-nav-links > li{
-					font-weight:100;
-					font-size:17px;
-					margin-bottom:15px;
-				}
-				.contain-toggle-nav-links > li > a{
-					color:black;
-				}
-				.contain-toggle-nav-links > li > a:hover{
-					opacity:0.7;
-				}
-				.line-break{
-					position:absolute;
-					left:55%;
-					height:90%;
-					margin-top:5%;
-					width:1px;
-					background-color:rgba(235,235,235,0.8);
-				}
-
-				.nav-right{
-					padding:30px;
-					padding-top:6%;
-				}
-				.nav-right > h1{
-					border-top:1px solid rgba(235,235,235,0.8);
-					width:80%;
-					display:block;
-					margin:auto;
-					padding-top:45px;
-					font-size:25px;
-					letter-spacing:0.5px;
-				}
-
-				.subscribe-text-input{
-					margin-top:30px;
-					padding:15px 29px;
-					margin-bottom:5px;
-					width:80%;
-				}
-				.subscribe-text-input:focus{
-					outline:0;
-				}
-				.subscribe-button-nav{
-					margin-top:3px;
-					font-weight:600;
-					border:2px solid black;
-					background-color:none;
-					padding:10px 28px;
-					font-size:15px;
-				}
-				.subscribe-button-nav:hover{
-					text-decoration: underline;
-					color:white;
-					background-color:black;
-				}
-				.nav-toggle-poem{
-					width:80%;
-					display:block;
-					margin:auto;
-					border-top:1px solid rgba(235,235,235,0.8);
-					padding-top:45px;
-					margin-bottom:45px;
-					text-align:center;
-					line-height:30px;
-					font-style: oblique;
-				}
-				.nav-toggle-logo{
-					width:80%;
-					display:block;
-					margin:auto;
-					margin-bottom:70px;
-				}
-
-				
-				.menu-left{
-					display:block;
-					z-index:100;
-					position:fixed;
-				}
-				.menu-left:focus{
-					outline:0 !important;
-				}
-
-				.third-slide{
-					width:100%;
-					height:80%;
-					background-image: url('img/third-slide.jpg');
-					background-repeat: no-repeat;
-					background-size: cover;
-					background-position: center;
-					background-attachment: fixed;
-					transition: none !important;
-
-
-				}
-				.second-slide{
-					position:relative;
-					width:100%;
-					height:80%;
-					background-image: url('img/second-slide.png');
-					background-repeat: no-repeat;
-					background-size: cover;
-					background-position: center;
-					background-attachment: fixed;
-					transition: none !important;
-				}
-				.second-slide > *{
-					color:white;
-					z-index:2;
-				}
-
+			
 			</style>
 			<div class="line-break">
 			</div>
@@ -433,6 +299,7 @@
 				</div>
 			</div>
 
+
 		<script src="scripts/jquery-3.2.1.js"/>f
 		<script src="scripts/bootstrap.min.js"></script>
 		<script src="scripts/jq.js"/>
@@ -443,5 +310,23 @@
 				$(".contain-big-nav").css('left','0px');
 			});
 		</script>
+
+
+		<div class="footer">
+					<h1 class="footer-h1">Eyeducate</h1>
+					<div class="toggle-follow">
+						<div class="follow-contain">
+							<ol>
+								<li><a href="https://www.youtube.com/channel/UCtBuc7YIpA6gYphpm7YcmKA/videos" class="aicon"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="https://www.instagram.com/amptonerecords/" class="aicon"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="https://soundcloud.com/amptonerecords" class="aicon"><i class="fa fa-soundcloud"></i></a></li>
+							</ol>
+						</div>
+					</div>
+						<button href="#" class="footer-button-contact"><a id="contact-link-footer" href="/contact">Contact us</a></button>
+					<p>Copyright © 2018 Eyeducate. All rights reserved.</p>
+		</div>
+
+
 	</body>
 </html>
