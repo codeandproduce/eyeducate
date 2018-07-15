@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
+    <div class="nav-content nav-left" style="text-align: center; height: 100%">
+      <ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
+        <li><a href="/"><i class="current-page">Home</i></a></li>
+        <li><a href="/about"><i>About Us</i></a></li>
+        <li><a href="/about"><i>Our Story</i></a></li>
+        <li><a href="/about"><i>Events</i></a></li>
+        <li><a href="/about"><i>EYE news</i></a></li>
+        <li><a href="/about"><i>Impact</i></a></li>
+        <li><a href="/about"><i>Media</i></a></li>
+      </ol>
+    </div>
+
+    <style>
+
+    </style>
+    <div class="line-break">
+    </div>
+
+    <div class="nav-right" style="text-align: center;">
+      <img class="nav-toggle-logo" src="img/nav_logo.png">
+      <div class="nav-toggle-poem">
+      “No one has ever become poor by giving.” </br>
+      -Anne Frank
+
+      </div>
+      <h1><i>Subscribe</i></h1>
+      <form>
+        <input class="subscribe-text-input" type="text" id="email" placeholder="Email Address">
+      </form>
+      <button class="subscribe-button-nav">SIGN UP</button>
+    </div>
+
+  </div>
+
+
+  <!-- Navigation -->
+  <div class="menu-left">
+      <button id="menu_button" class="menu-button">
+              <span class="menu-button-span shorter-span shorter-span-right"></span>
+              <span class="menu-button-span span-center"></span>
+              <span class="menu-button-span shorter-span shorter-span-left"></span>
+            </button>
+  </div>
+  <div class="nav">
+
+    <div class="logo_center">
+      <img class="nav_logo" src="img/nav_logo.png">
+    </div>
+    <div class="social-right">
+      <a href="https://google.com"><img class="social-email" src="img/social_email.png"></a>
+      <a href="https://instagram.com"><img class="social-insta" src="img/social_insta.png"></a>
+    </div>
+  </div>
+  <!-- ! -->
+
+
+  <style>
+    .nav{
+      z-index:6;
+    }
+    .floating-box{
+      transition: none;
+      position:absolute;
+      width:400px;
+      height:300px;
+      border:3px solid #b4b6c3;
+      border-radius: 5px;
+      left:8%;
+      top:33em;
+      z-index:5;
+      background-color: white;
+      padding:30px;
+      background:
+        linear-gradient(45deg, #8f909b 45px, transparent 45px)64px 64px,
+        linear-gradient(45deg, #8f909b 45px, transparent 45px,transparent 91px, #a1a3ad 91px, #a1a3ad 135px, transparent 135px),
+        linear-gradient(-45deg, #8f909b 23px, transparent 23px, transparent 68px,#8f909b 68px,#8f909b 113px,transparent 113px,transparent 158px,#8f909b 158px);
+      background-color:#a1a3ad;
+      background-size: 128px 128px;
+    }
+    .floating-h1{
+      width:100%;
+      text-align: center;
+      color:white;
+      text-decoration: underline;
+      margin-bottom:40px;
+    }
+    .floating-short-des{
+      width:100%;
+      text-align: center;
+      color:white;
+    }
+    </style>
+    <!--Main Content !-->
+    <div class="our-story">
+    <h style="margin-left:15%; font-size: 25px;"> OUR STORY </h>
+      <div class="row">
+        <div class="col-md-6">
+        <p class="our-story-description">Based in Shanghai American School, Eyeducate
+        raises awareness about the prevalent issue of myopia
+        and hyperopia (nearsigntness/farsightedness) which affects
+        approximately 3.5 billion people today. As the use of technology
+        is becoming ubiquitous in our lives, it is truly important for
+        younger students to be educated about proper methods to protect
+        their eyesight. Many younger children in more rural areas of China are not
+        as educated about this topic, therefore, it is our goal to take this matter
+        into our own hands.</p>
+        <img src="#">
+        </div>
+
+        <div class="col-md-6">
+        <img src="#">
+        <p class="our-story-description">Currently, EYEducate works directly wiht the Eye Love Vision Fund, a registered organization that
+        has specifically designed a bilingual lesson to be taught to students around six years old, along with the support
+        of Safe Kids China, a sub-branch of Safe Kids Worldwide and the Beijing United Charity Foundation to both teach students
+        about how to protect their eyesight and to donate eye protection lesson toolkits to schools in rural China.</p>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/jquery-3.2.1.js"/>
+    <script>src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jq.js"/>
+
+<script>
+      $("#menu_button").click(function(){
+        console.log("clicked!");
+        $(".contain-big-nav").css('left','0px');
+      });
+    </script>
+
+
+    <div class="footer">
+          <h1 class="footer-h1">Eyeducate</h1>
+          <div class="toggle-follow">
+            <div class="follow-contain">
+              <ol>
+                <li><a href="https://www.youtube.com/channel/UCtBuc7YIpA6gYphpm7YcmKA/videos" class="aicon"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/amptonerecords/" class="aicon"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://soundcloud.com/amptonerecords" class="aicon"><i class="fa fa-soundcloud"></i></a></li>
+              </ol>
+            </div>
+          </div>
+            <button href="#" class="footer-button-contact"><a id="contact-link-footer" href="/contact">Contact us</a></button>
+          <p>Copyright © 2018 Eyeducate. All rights reserved.</p>
+    </div>
+
+    </body>
+
+</html>

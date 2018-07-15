@@ -481,7 +481,7 @@ text-align: center;
 					margin-bottom:70px;
 				}
 
-				
+
 				.menu-left{
 					display:block;
 					z-index:100;
@@ -585,4 +585,17 @@ text-align: center;
 		.footer-h1{
 			text-align: center;
 			color:white;
+		}
+
+		.our-story{
+			margin-top:0px;
+			height:90%;
+			width:100%;
+			padding-top: 100px;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+
+		.our-story-description{
+			line-height: 2;
 		}
