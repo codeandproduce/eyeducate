@@ -541,8 +541,7 @@ text-align: center;
 		}
 		.footer img{
 			display:block;
-			margin:40px auto;
-		}
+			margin:40px auto;		}
 
 		.footer h2{
 			width:100%;
@@ -600,11 +599,9 @@ text-align: center;
 			color:white;
 		}
 
-<<<<<<< HEAD
-		.footer-row {
-			padding-top:30px;
-			margin-left: 15%;
-			margin-right: 15%;
+		.row-footer {
+			border: white;
+
 		}
 		.qr-code-img {
 			width:150px;
