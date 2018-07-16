@@ -480,7 +480,12 @@ text-align: center;
 					margin:auto;
 					margin-bottom:70px;
 				}
+<<<<<<< HEAD
 				
+=======
+
+
+>>>>>>> 2e01fbf4351f405f7872c36d9ffd772081ae7184
 				.menu-left{
 					display:block;
 					z-index:100;
@@ -595,6 +600,7 @@ text-align: center;
 			color:white;
 		}
 
+<<<<<<< HEAD
 		.footer-row {
 			padding-top:30px;
 			margin-left: 15%;
@@ -609,3 +615,17 @@ text-align: center;
 		}
 
 
+=======
+		.our-story{
+			margin-top:0px;
+			height:90%;
+			width:100%;
+			padding-top: 100px;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+
+		.our-story-description{
+			line-height: 2;
+		}
+>>>>>>> 2e01fbf4351f405f7872c36d9ffd772081ae7184
