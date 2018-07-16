@@ -537,11 +537,11 @@ text-align: center;
 			width:100%;
 			padding-top:60px;
 			padding-bottom:80px;
-			height: 70%;
+			height: 400px;
 		}
 		.footer img{
 			display:block;
-			margin:40px auto;		}
+			margin:0px auto;		}
 
 		.footer h2{
 			width:100%;
@@ -600,7 +600,7 @@ text-align: center;
 		}
 
 		.row-footer {
-			border: white;
+
 
 		}
 		.qr-code-img {
@@ -608,7 +608,6 @@ text-align: center;
 			height:150px;
 			position:relative;
 			float:right;
-
 		}
 
 
