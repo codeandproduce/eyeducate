@@ -494,7 +494,7 @@ text-align: center;
 				.third-slide{
 					width:100%;
 					height:80%;
-					background-image: url('/img/third-slide.jpg');
+					background-image: url('./../img/third-slide.jpg');
 					background-repeat: no-repeat;
 					background-size: cover;
 					background-position: center;
@@ -507,7 +507,7 @@ text-align: center;
 					position:relative;
 					width:100%;
 					height:80%;
-					background-image: url('/img/second-slide.png');
+					background-image: url('./../img/second-slide.png');
 					background-repeat: no-repeat;
 					background-size: cover;
 					background-position: center;
