@@ -622,3 +622,13 @@ text-align: center;
 		.our-story-description{
 			line-height: 2;
 		}
+
+		.our-story-pic{
+			display:block;
+			max-width: 100%;
+    	height: auto;
+			width: 40%;
+			height: 40;
+			margin-left:auto;
+			margin-right:auto;
+		}
