@@ -198,6 +198,8 @@ body{
 	padding:20px;
 	display:inline-block;
 	float:left;
+	position: absolute;
+
 }
 .lightbulb{
 	width:120px;
@@ -485,6 +487,7 @@ text-align: center;
 					z-index:100;
 			     	position: absolute;
     				z-index: 1000;
+
 				}
 
 				.menu-left:focus{
