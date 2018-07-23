@@ -215,15 +215,48 @@ body{
 	margin-top:7px;
 }
 .social-insta{
-	width:40px;
-	height:40px;
-	margin-left:20px;
+	width:35px;
+	height:35px;
+	margin-left:10px;
 	display:inline-block;
 	margin-right:20px;
 }
 .social-email{
-	width:50px;
-	height:50px;
+	width:45px;
+	height:45px;
+	margin-left:10px;
+	display:inline-block;
+}
+
+.social-wechat {
+	width:45px;
+	height:45px;
+	margin-left:10px;
+	display:inline-block;
+}
+
+.social-wechat-popup {
+	display:inline-block;
+
+}
+
+.social-wechat-popup .social-qr-code{
+	display:none;
+}
+
+.social-wechat-popup:hover .social-qr-code{
+	width:120px;
+	height:120px;
+	display:block;
+	position:fixed;
+	margin-top:20px;
+}
+
+
+
+.social-youtube{
+	width:45px;
+	height:45px;
 	display:inline-block;
 }
 
