@@ -135,8 +135,26 @@
 				}
 				.container{
 					width:100%;
-					margin:0;
+					margin-top:0;
 					height:80%;
+					padding:0;
+				}
+      		.title{
+      			position: absolute;
+				    top: 100px;
+				    left: 500px;
+				    background-color: white;
+				    color: black;
+				    padding-left: 20px;
+				    padding-right: 20px;
+				    font-size: 100px;
+				    font-stretch: ultra-expanded;
+				    font-weight: bold;
+      		}
+				.container2{
+					width:100%;
+					margin-top:0;
+					height:200px;
 					padding:0;
 				}
 
@@ -175,6 +193,8 @@
 				<a href="https://google.com"><img class="social-email" src="img/social_email.png"></a>
 				<a href="https://instagram.com"><img class="social-insta" src="img/social_insta.png"></a>
 			</div>
+
+
 		</div>
 
 
@@ -221,15 +241,20 @@
 				    font-size: 50;
 				    font-stretch: ultra-expanded;
 				    font-weight: bold
-
       		}
 
 		</style>
 
 
+<div class="container2">
+</div>
 
 <div class="container">
   <br>
+			    <div class="title">
+	<h1 class="centered section-heading">RECENT EVENTS</h1>
+ 		</div>
+
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -238,6 +263,7 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
+
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
@@ -291,6 +317,7 @@
       </div>
 
     </div>
+
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
