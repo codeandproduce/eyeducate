@@ -16,6 +16,11 @@ app.get('/about', (req, res)=>{
 	res.sendFile(path.join(__dirname + '/about-us.html'));
 })
 
+app.get('/events', (req, res)=>{
+	res.sendFile(path.join(__dirname + '/events.html'));
+})
+
+
 
 app.listen(port, () => {
 	console.log("running!");

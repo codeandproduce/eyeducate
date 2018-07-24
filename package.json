@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/codeandproduce/eyeducate/issues"
   },
-  "homepage": "https://github.com/codeandproduce/eyeducate#readme"
+  "homepage": "https://github.com/codeandproduce/eyeducate#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
