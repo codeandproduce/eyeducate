@@ -1,385 +1,539 @@
-<html>
-	<head>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	</head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+      @media(max-width: 768px){
+          .contain-big-nav{
+            width:80%;
+          }
+          .nav-left{
+            width:100%;
+          }
+          .line-break{
+            display:none;
+          }
+          .contain-toggle-nav-links{
+            left:0;
+            right:0;
+          }
+          .nav-right{
+            display:none;
+          }
+          .nav_logo{
+            margin-left:0;
+          }
+          .social-right{
+            display:none;
+          }
+          .floating-box{
+            display:none;
+          }
 
-	<body>
-		<div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
-			<div class="nav-content nav-left" style="text-align: center; height: 100%">
-				<ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
-					<li><a href="/"><i class="current-page">Home</i></a></li>
-					<li><a href="/about"><i>About Us</i></a></li>
-					<li><a href="/about"><i>Our Story</i></a></li>
-					<li><a href="/events"><i>Events</i></a></li>
-					<li><a href="/about"><i>EYE news</i></a></li>
-					<li><a href="/about"><i>Impact</i></a></li>
-					<li><a href="/about"><i>Media</i></a></li>
-				</ol>
-			</div>
+        }
 
-			<style>
-				.nav-left{
-					width:55%;
-					display:inline;
-					float:left;
-				}
-				.nav-right{
-					width:45%;
-					display:inline;
-					float:right;
-				}
-				.current-page{
-					text-decoration: underline;
-					opacity:0.7;
-				}
-				.contain-toggle-nav-links{
-				    position: absolute;
-					left: 25%;
-					top: 30%;
-				}
-				.contain-toggle-nav-links > li{
-					font-weight:100;
-					font-size:17px;
-					margin-bottom:15px;
-				}
-				.contain-toggle-nav-links > li > a{
-					color:black;
-				}
-				.contain-toggle-nav-links > li > a:hover{
-					opacity:0.7;
-				}
-				.line-break{
-					position:absolute;
-					left:55%;
-					height:90%;
-					margin-top:5%;
-					width:1px;
-					background-color:rgba(235,235,235,0.8);
-				}
-				.nav-right{
-					padding:30px;
-					padding-top:6%;
-				}
-				.nav-right > h1{
-					border-top:1px solid rgba(235,235,235,0.8);
-					width:80%;
-					display:block;
-					margin:auto;
-					padding-top:45px;
-					font-size:25px;
-					letter-spacing:0.5px;
-				}
-				.subscribe-text-input{
-					margin-top:30px;
-					padding:15px 29px;
-					margin-bottom:5px;
-					width:80%;
-				}
-				.subscribe-text-input:focus{
-					outline:0;
-				}
-				.subscribe-button-nav{
-					margin-top:3px;
-					font-weight:600;
-					border:2px solid black;
-					background-color:none;
-					padding:10px 28px;
-					font-size:15px;
-				}
-				.subscribe-button-nav:hover{
-					text-decoration: underline;
-					color:white;
-					background-color:black;
-				}
-				.nav-toggle-poem{
-					width:80%;
-					display:block;
-					margin:auto;
-					border-top:1px solid rgba(235,235,235,0.8);
-					padding-top:45px;
-					margin-bottom:45px;
-					text-align:center;
-					line-height:30px;
-					font-style: oblique;
-				}
-				.nav-toggle-logo{
-					width:80%;
-					display:block;
-					margin:auto;
-					margin-bottom:70px;
-				}
-				.menu-left{
-					display:block;
-					z-index:100;
-					position:fixed;
-				}
-				.menu-left:focus{
-					outline:0 !important;
-				}
-				.icon-person{
-					margin-bottom:30px;
-				}
-				.big-selected-img{
-					width:100%;
-				}
-				.centered_text{
-				 text-align:center;
-				 font-style:oblique;
-				 display:block;
-				 font-size:100px;
 
-				}
-				.container{
+  </style>
+</head>
+
+<body>
+  <div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
+    <div class="nav-content nav-left" style="text-align: center; height: 100%">
+      <ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
+        <li><a href="/"><i class="current-page">Home</i></a></li>
+        <li><a href="/about"><i>About Us</i></a></li>
+        <li><a href="/about"><i>Our Story</i></a></li>
+        <li><a href="/about"><i>Events</i></a></li>
+        <li><a href="/about"><i>EYE news</i></a></li>
+        <li><a href="/about"><i>Impact</i></a></li>
+        <li><a href="/about"><i>Media</i></a></li>
+      </ol>
+    </div>
+
+    <style>
+
+    </style>
+    <div class="line-break">
+    </div>
+
+    <div class="nav-right" style="text-align: center;">
+      <img class="nav-toggle-logo" src="img/nav_logo.png">
+      <div class="nav-toggle-poem">
+      “No one has ever become poor by giving.” </br>
+      -Anne Frank
+
+      </div>
+      <h1><i>Subscribe</i></h1>
+      <form>
+        <input class="subscribe-text-input" type="text" id="email" placeholder="Email Address">
+      </form>
+      <button class="subscribe-button-nav">SIGN UP</button>
+    </div>
+
+  </div>
+
+
+  <!-- Navigation -->
+  <div class="menu-left">
+      <button id="menu_button" class="menu-button">
+              <span class="menu-button-span shorter-span shorter-span-right"></span>
+              <span class="menu-button-span span-center"></span>
+              <span class="menu-button-span shorter-span shorter-span-left"></span>
+            </button>
+  </div>
+  <div class="nav">
+
+    <div class="logo_center">
+      <img class="nav_logo" src="img/nav_logo.png">
+    </div>
+    <div class="social-right">
+      <a href="https://youtube.com"><img class="social-youtube" src="img/social_youtube.png"></a>
+        <div class="social-wechat-popup">
+          <img class="social-wechat" src="img/social_wechat.png"/>
+          <img class="social-qr-code" src="img/qr_code.png"/>
+        </div>
+        <a href="mailto:sas.eyeducate@gmail.com"><img class="social-email" src="img/social_email.png"></a>
+        <a href="https://instagram.com/eyeducate"><img class="social-insta" src="img/social_insta.png"></a>
+    </div>
+  </div>
+  <!-- ! -->
+
+
+  <style>
+    .nav{
+      z-index:6;
+    }
+    .floating-box{
+      transition: none;
+      position:absolute;
+      width:400px;
+      height:300px;
+      border:3px solid #b4b6c3;
+      border-radius: 5px;
+      left:8%;
+      top:33em;
+      z-index:5;
+      background-color: white;
+      padding:30px;
+      background:
+        linear-gradient(45deg, #8f909b 45px, transparent 45px)64px 64px,
+        linear-gradient(45deg, #8f909b 45px, transparent 45px,transparent 91px, #a1a3ad 91px, #a1a3ad 135px, transparent 135px),
+        linear-gradient(-45deg, #8f909b 23px, transparent 23px, transparent 68px,#8f909b 68px,#8f909b 113px,transparent 113px,transparent 158px,#8f909b 158px);
+      background-color:#a1a3ad;
+      background-size: 128px 128px;
+    }
+    .floating-h1{
+      width:100%;
+      text-align: center;
+      color:white;
+      text-decoration: underline;
+      margin-bottom:40px;
+    }
+    .floating-short-des{
+      width:100%;
+      text-align: center;
+      color:white;
+    }
+
+
+
+
+    .contain{
+      padding-top:120px;
+    }
+    .site-heading{
+      width:100%;
+      text-align: center;
+      font-weight: 100;
+      font-size:30px;
+    }
+    h2{
+      font-weight: 100;
+      margin-left:30px;
+    }
+    .contain-featured{
+      padding:50px;
+    }
+    .contain-col-articles{
+      padding:30px;
+    }
+
+
+    .contain-one-article{
+      position:relative;
+      background-image: url('./img/food-place.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height:200px;
+      width:100%;
+      margin-top:30px;
+    }
+    .one-article-link{
+      position:absolute;
+      width:100%;
+      height:100%;
+    }
+    .one-article-full-tint{
+      width:100%;
+      height:100%;
+      background-color: white;
+      opacity:0.3;
+      position: absolute;
+    }
+    .one-article-small-tint-and-title{
+      position:relative;
+      top:50%;
+      transform:translateY(-50%);
+      width:90%;
+      height:50px;
+      display:block;
+      margin:auto;
+      background-color: white;
+      opacity:0.7;
+    }
+    .one-article-name{
+      width:100%;
+      text-align: center;
+      top:50%;
+      position: absolute;
+      color:black;
+      transform: translateY(-50%);
+    }
+
+    </style>
+    <!--Main Content !-->
+    <div class="contain">
+      <h1 class="site-heading">Events</h1>
+
+      </div>
+      <style>
+        .contain-break{
+          padding:0px 120px;
+        }
+        .break-title{
+          width:100%;
+          text-align: center;
+          margin-bottom:10px;
+          font-size:50px;
+          color:#75798e;
+        }
+        .break-des{
+          font-size:15px;
+          line-height:30px;
+          padding:8px;
+          word-wrap: break-word;
+          width:70%;
+          text-align:left;
+          margin-left:20%;
+
+        }
+        .break-image{
+          width:100%;
+        }
+        .contain-break-image{
+          padding:60px;
+        }
+        .container{
 					width:100%;
 					margin-top:0;
 					height:80%;
 					padding:0;
 				}
-      		.title{
-      			position: absolute;
-				    top: 100px;
-				    left: 500px;
-				    background-color: white;
-				    color: black;
-				    padding-left: 20px;
-				    padding-right: 20px;
-				    font-size: 100px;
-				    font-stretch: ultra-expanded;
-				    font-weight: bold;
-      		}
-				.container2{
-					width:100%;
-					margin-top:0;
-					height:200px;
-					padding:0;
-				}
 
-			</style>
-			<div class="line-break">
-			</div>
+		.events{
+			padding:50px;
+		}
+		.events-image{
+			width:80%;
+			height:90%;
+		}
+		.events-text{
+			word-wrap: break-word;
+			width:80%;
+		}
+      </style>
 
-			<div class="nav-right" style="text-align: center;">
-				<img class="nav-toggle-logo" src="img/nav_logo.png">
-				<div class="nav-toggle-poem">
-				“No one has ever become poor by giving.” </br>
-				-Anne Frank
-
-				</div>
-				<h1><i>Subscribe</i></h1>
-				<form>
-					<input class="subscribe-text-input" type="text" id="email" placeholder="Email Address">
-				</form>
-				<button class="subscribe-button-nav">SIGN UP</button>
-			</div>
-
-		</div>
-		<div class="menu-left">
-				<button id="menu_button" class="menu-button">
-		            <span class="menu-button-span shorter-span shorter-span-right"></span>
-		            <span class="menu-button-span span-center"></span>
-		            <span class="menu-button-span shorter-span shorter-span-left"></span>
-          		</button>
-		</div>
-		<div class="nav" style="z-index:2;">
-
-			<div class="logo_center">
-				<img class="nav_logo" src="img/nav_logo.png">
-			</div>
-			<div class="social-right">
-				<a href="https://google.com"><img class="social-email" src="img/social_email.png"></a>
-				<a href="https://instagram.com"><img class="social-insta" src="img/social_insta.png"></a>
-			</div>
-
-
-		</div>
-
-
-
-
-		<style>
-			.section-heading{
-				margin-top:50px;
-				margin-bottom:40px;
-
-			}
-			.carousel,.item{
-				height:100%;
-				background-color:black;
-
-			}
-      		.carousel-inner{
-      			height:100%;
-      		}
-    	    .centered_text{
-		    	margin-top:100px;
-		        text-align:center;
-		        font-size:75px;
-      		}
-
-      		.event-title{
-      			font-size:50px;
-      			font-weight: 900;
-      			font:Verdana, sans-serif;
-      			margin-top:0px;
-      		}
-      		.carousel-caption{
-		        text-align:left;
-		        font-size:10px;
-      		}
-      		.date{
-      				position: absolute;
-				    top: 150px;
-				    left:70px;
-				    background-color: white;
-				    color: black;
-				    padding-left: 20px;
-				    padding-right: 20px;
-				    font-size: 50;
-				    font-stretch: ultra-expanded;
-				    font-weight: bold
-      		}
-
-		</style>
-
-
-<div class="container2">
-</div>
-
-<div class="container">
-  <br>
-			    <div class="title">
-	<h1 class="centered section-heading">RECENT EVENTS</h1>
- 		</div>
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="img/placeholder-2.png" width="100%" style="padding-left:400px;">
-        <div class="date">
-        	July
-        	4th
+      <div class="contain-break">
+        <div class="row" style="margin-bottom:5%;">
+          <div class="col-md-6">
+            <h1 class="break-title" style="font-size:40px;">OUR EVENTS</h1>
+            <p class="break-des" style="width=40%;">
+Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="contain-break-image">
+              <img class="break-image" src="img/recent_events.PNG">
+            </div>
+          </div>
         </div>
-        <div class="carousel-caption">
-          <h2 class="event-title">Event 1</h2>
-          <p>Discription of event Discription of event Discription of event Discription of event Discription of event Discription of event Discription of event</p>
-        </div>
-      </div>
+<style>
+* {
+    box-sizing: border-box;
+}
 
-      <div class="item">
-        <img src="img/placeholder-1.png" width="100%" style="padding-left:400px;">
-        <div class="date">
-        	July
-        	4th
-        </div>
-        <div class="carousel-caption">
-          <h2 class="event-title">Event 2</h2>
-          <p>Discription of event Discription of event Discription of event Discription of event Discription of event Discription of event Discription of event</p>
-        </div>
-      </div>
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
 
-      <div class="item">
-        <img src="img/placeholder-2.png" width="100%" style="padding-left:400px;">
-        <div class="date">
-        	July
-        	4th
-        </div>
-        <div class="carousel-caption">
-          <h2 class="event-title">Event 3</h2>
-          <p>Discription of event Discription of event Discription of event Discription of event Discription of event Discription of event Discription of event</p>
-        </div>
-      </div>
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 
-      <div class="item">
-        <img src="img/placeholder-2.png" width="100%" style="padding-left:400px;">
-        <div class="date">
-        	July
-        	4th
-        </div>
-        <div class="carousel-caption">
-          <h2 class="event-title">Event 4</h2>
-          <p>Discription of event Discription of event Discription of event Discription of event Discription of event Discription of event Discription of event</p>
-        </div>
-      </div>
+}
 
-    </div>
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    margin-top:20%;
+    margin-bottom:20%;
+    width: 80%;
+}
+.break{
+
+	width:100%;
+	margin:50px;
+	height:20%;
+	padding:0;
+}
+.date{
+	margin:2%;
+	margin-left:0;
+}
 
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+
+<div class="row">
+  <div class="column">
+   	<img class="events-image" src="img/recent_events.PNG">
+    <h2 style="text-align:left; margin-left:0px;">Event name</h2>
+    <div class="date"><strong>July 4th 2018</strong></div>
+    <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+    Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+    leo eget bibendum sodales, augue velit cursus nunc,</p>
+    <button type="button" class="btn btn-default">Read more</button>
+      <hr/>
+
+
+
+  </div>
+  <div class="column">
+    <img class="events-image" src="img/recent_events.PNG">
+    <h2 style="text-align:left; margin-left:0px;">Event name</h2>
+    <div class="date"><strong>July 4th 2018</strong></div>
+    <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+    Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+    leo eget bibendum sodales, augue velit cursus nunc,</p>
+    <button type="button" class="btn btn-default">Read more</button>
+  <hr/>
+  </div>
+
+  <div class="column" >
+   	<img class="events-image" src="img/recent_events.PNG">
+    <h2 style="text-align:left; margin-left:0px;">Event name</h2>
+    <div class="date"><strong>July 4th 2018</strong></div>
+    <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+    Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+    leo eget bibendum sodales, augue velit cursus nunc,</p>
+    <button type="button" class="btn btn-default">Read more</button>
+  <hr/>
   </div>
 </div>
 
-		<div class="footer">
-					<h2 class="footer-h2" style="padding-left:40px; padding-right:40px">EYEducate is a non-profit organization based in Shanghai American School</h2>
-					<h2 class="footer-h2" style="padding-left:40px; padding-right:40px">We raise awareness about Ophthalmic Diseases and Disorders</h2>
-					<div class="row-footer" style="padding-left: 15%; padding-right: 15%; margin-top: 30px">
-						<div class="col-sm-6">
-							<div class="col-md-6">
-								<div class="contain-one-content">
-									<h3 class="footer-p1">ADDRESS</h3>
-									<p class="footer-p2">Shanghai American School Puxi Campus</p>
-									<p class="footer-p2">258 JinFeng Road</p>
-									<p class="footer-p2">HuaCao Town</p>
-									<p class="footer-p2">MinHang District</p>
-									<p class="footer-p2">Shanghai, PRC 201107</p>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="contain-one-content">
-									<h3 class="footer-p1">联系地址</h3>
-									<p class="footer-p2">上海美国学校普西校区</p>
-									<p class="footer-p2">上海市闵行区华漕镇</p>
-									<p class="footer-p2">金丰路258号</p>
-									<p class="footer-p2">中国 上海 201107</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="col-md-6">
-								<div class="cotain-one-content">
-									<button href="#" class="footer-button-contact"><a id="contact-link-footer" href="mailto:sas.eyeducate@gmail.com">sas.eyeducate@gmail.com</a></button>
-									<button href="#" class="footer-button-contact"><a id="contact-link-footer" href="https://instagram.com/eyeducate">Instagram: eyeducate</a></button>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="contain-one-content">
-									<img src="img/qr_code.png" class="qr-code-img">
-								</div>
-							</div>
-						</div>
-					</div>
 
-		<script src="scripts/jquery-3.2.1.js"/>f
-		<script src="scripts/bootstrap.min.js"></script>
-		<script src="scripts/jq.js"/>
 
-		<script>
-			$("#menu_button").click(function(){
-				console.log("clicked!");
-				$(".contain-big-nav").css('left','0px');
-			});
-		</script>
-	</body>
+<div class="row">
+  <div class="column">
+   	<img class="events-image" src="img/recent_events.PNG">
+    <h2 style="text-align:left; margin-left:0px;">Event name</h2>
+    <div class="date"><strong>July 4th 2018</strong></div>
+    <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+    Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+    leo eget bibendum sodales, augue velit cursus nunc,</p>
+    <button type="button" class="btn btn-default">Read more</button>
+  <hr/>
+
+  </div>
+  <div class="column">
+    <img class="events-image" src="img/recent_events.PNG">
+    <h2 style="text-align:left; margin-left:0px;">Event name</h2>
+    <div class="date"><strong>July 4th 2018</strong></div>
+    <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+    Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+    leo eget bibendum sodales, augue velit cursus nunc,</p>
+    <button type="button" class="btn btn-default">Read more</button>
+  <hr/>
+
+  </div>
+  <div class="column" >
+   	<img class="events-image" src="img/recent_events.PNG">
+    <h2 style="text-align:left; margin-left:0px;">Event name</h2>
+    <div class="date"><strong>July 4th 2018</strong></div>
+    <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+    Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+    leo eget bibendum sodales, augue velit cursus nunc,</p>
+    <button type="button" class="btn btn-default">Read more</button>
+  <hr/>
+
+  </div>
+</div>
+
+</div>
+	</div>
+	</div>
+
+</div>
+        <style>
+
+            html, body, #map
+            {
+                height: 100%;
+                margin: 0;
+            }
+            .container{
+            	width:80%;
+            	margin-bottom:20%;
+            }
+
+        </style>
+
+<div class="container">
+      <h1 class="break-title">WHERE WE'VE GONE</h1>
+
+	        <div id="map"></div>
+        <script>
+
+            function initMap() {
+                let map = new google.maps.Map(document.getElementById("map"), {
+                    center: {lat:31.204601, lng: 121.280884},
+                    zoom: 6,
+                    mapTypeId: 'roadmap'
+                });
+                var contentString = 'hi';
+                  var infowindow = new google.maps.InfoWindow({
+                  content: contentString
+                });
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: {lat: 31.204601, lng:  121.280884}
+                });
+                marker.addListener('click', function() {
+                     infowindow.open(map, marker);
+                });
+               }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD060HFRs8E27SDasFfhGqMiD5cKrzau74&callback=initMap"></script>
+
+</div>
+
+    <style>
+    </style>
+    <script src="scripts/jquery-3.2.1.js"/>
+    <script>src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jq.js"/>
+
+<script>
+      $("#menu_button").click(function(){
+        console.log("clicked!");
+        $(".contain-big-nav").css('left','0px');
+      });
+    </script>
+
+
+    <style>
+
+      @media(max-width:768px){
+        .footer{
+          height:auto;
+          padding-bottom:200px;
+        }
+        .contain-one-content{
+          width:100%;
+          padding-bottom:20px;
+          position:relative;
+        }
+        .contain-one-content > *{
+          display:block;
+          margin:auto;
+          text-align: center;
+          margin-bottom:3px;
+        }
+        .qr-code-img{
+          position:absolute;
+          left:0;
+          right:0;
+        }
+      }
+    </style>
+
+
+
+
+
+
+    <div class="footer">
+          <h2 class="footer-h2" style="padding-left:40px; padding-right:40px">EYEducate is a non-profit organization based in Shanghai American School</h2>
+          <h2 class="footer-h2" style="padding-left:40px; padding-right:40px">We raise awareness about Ophthalmic Diseases and Disorders</h2>
+          <div class="row-footer" style="padding-left: 15%; padding-right: 15%; margin-top: 30px">
+            <div class="col-sm-6">
+              <div class="col-md-6">
+                <div class="contain-one-content">
+                  <h3 class="footer-p1">ADDRESS</h3>
+                  <p class="footer-p2">Shanghai American School Puxi Campus</p>
+                  <p class="footer-p2">258 JinFeng Road</p>
+                  <p class="footer-p2">HuaCao Town</p>
+                  <p class="footer-p2">MinHang District</p>
+                  <p class="footer-p2">Shanghai, PRC 201107</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contain-one-content">
+                  <h3 class="footer-p1">联系地址</h3>
+                  <p class="footer-p2">上海美国学校普西校区</p>
+                  <p class="footer-p2">上海市闵行区华漕镇</p>
+                  <p class="footer-p2">金丰路258号</p>
+                  <p class="footer-p2">中国 上海 201107</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="col-md-6">
+                <div class="cotain-one-content">
+                  <button href="#" class="footer-button-contact"><a id="contact-link-footer" href="https://google.com">sas.eyeducate@gmail.com</a></button>
+                  <button href="#" class="footer-button-contact"><a id="contact-link-footer" href="https://instagram.com/eyeducate">Instagram: eyeducate</a></button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="contain-one-content">
+                  <img src="img/qr_code.png" class="qr-code-img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+    </body>
+
 </html>

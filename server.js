@@ -20,6 +20,10 @@ app.get('/events', (req, res)=>{
 	res.sendFile(path.join(__dirname + '/events.html'));
 })
 
+app.get('/eye-news', (req, res)=>{
+	res.sendFile(path.join(__dirname + '/eye-news.html'));
+})
+
 
 
 app.listen(port, () => {
