@@ -173,6 +173,7 @@ body{
 .logo_center{
 	display:inline-block;
 	margin:auto;
+	padding-left:180px;
 }
 .menu-button{
 	padding:0px;
@@ -657,9 +658,52 @@ text-align: center;
 		.our-story-pic{
 			display:block;
 			max-width: 100%;
-    	height: auto;
+    		height: auto;
 			width: 40%;
 			height: 40;
 			margin-left:auto;
 			margin-right:auto;
+		}
+
+		.contain-video {
+			position:relative;
+			display:block;
+			width:80%;
+			height:600px;
+			background-color:white;
+			margin-left:auto;
+			margin-right: auto;
+			margin-top:50px;
+			padding-top:30px;
+			border: 3px solid #b4b6c3;
+		}
+
+		.video {
+			position:relative;
+			display:block;
+			margin:auto;
+			width:80%;
+			height:80%;
+		}
+
+		.video-description{
+			text-align: left;
+			margin-left:10%;
+		}
+
+		.video-description h2{
+			margin-left:0;
+		}
+
+		.contain-media-article-row {
+			display:block;
+			margin-top:30px;
+			margin-left:10%;
+			margin-right:10%;
+			word-wrap: break-word; 
+			text-align: left;
+		}
+
+		.contain-media-article-row h2 {
+			margin-left: 0;
 		}
