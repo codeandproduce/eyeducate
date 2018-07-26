@@ -52,6 +52,9 @@
 					.nav_logo{
 						margin-left:0;
 					}
+					.logo_center{
+						padding:0;
+					}
 					.social-right{
 						display:none;
 					}
@@ -74,7 +77,6 @@
 						margin-bottom:30px;
 					}
 					.eye-news{
-
 						padding:0;
 						padding-top:50px;
 					}
@@ -82,8 +84,8 @@
 						padding:0;
 					}
 					.col-sm-6{
-						padding-left:100px;
-						padding-right:100px;
+						padding-left:40px;
+						padding-right:40px;
 					}
 					.row-footer > .col-sm-6{
 						padding:0;
@@ -92,11 +94,50 @@
 						margin-top:25px;
 					}
 					.col-sm-4{
-						padding-left:100px;
-						padding-right:100px;
+						padding-left:40px;
+						padding-right:40px;
 					}
 					.contain_main_text{
 						margin-top:0;
+					}
+
+
+					.first-slide{
+						height:100%;
+					}
+					.first_big_image{
+						width:55%;
+						display:block;
+						margin:auto;
+						margin-top:70px;
+					}
+					.contain_main_text > h1{
+						font-size:24px;
+					}
+				}
+				@media(max-width:410px){
+					.nav_logo{
+						width:auto;
+						height:57px;
+						margin-top:18px;
+					}
+					.first_big_image{
+						width:85%;
+						display:block;
+						margin:auto;
+						margin-top:80px;
+						margin-bottom:20px;
+					}
+					.contain_main_text > h1{
+						font-size:24px;
+					}
+					.heading-h1{
+						width:100%;
+						font-size:28px;
+
+					}
+					.recent-events-heading{
+						padding-bottom:0;
 					}
 				}
 
@@ -184,19 +225,16 @@
 			}
 		</style>
 		<!-- Content -->
-		<div class="floating-box">
-			<h1 class="floating-h1">Who are we?</h1>
-			<p class="floating-short-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</div>
+
 
 		<div class="contain">
 			<div class="row first-slide">
-				<div class="col-md-7">
+				<div class="col-sm-7">
 					<div class="contain">
 						<img class="first_big_image" src="img/bighead.png"/>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-sm-5">
 					<div class="contain">
 						<div class="contain_main_text">
 							<h1>
@@ -219,39 +257,65 @@
 				<div class="bg-tint">
 				</div>
 				<div class="contain-second-slide-content">
-					<h1 style="font-style: italic" class="centered-up">
-					 	ENVISIONING
+					<h1 style="font-style: italic" class="centered-up envision">
+					 	Envisioning
 					</h1>
-					<h1 class="centered-down">
+					<h1 class="centered-down clearerfuture">
 						A CLEARER FUTURE
 					</h1>
+					<button class="join-us-btn">JOIN US</button>
 				</div>
 			</div>
 			<div class="recent-events">
 				<div class="recent-events-heading">
 					<img src="img/lightbulb.png" class="lightbulb">
-					<h1 style="padding-bottom:10px;" class="section-heading heading-h1">Recent Events</h1>
+					<h1 style="padding-bottom:10px;" class="section-heading heading-h1">RECENT EVENTS</h1>
 				</div>
 				<div class="row">
 					<div class="recent-event-inside col-sm-4">
 						<img class="recent-event-inside-img" src="img/recent_events.png">
-						<p class="recent-event-inside-des">Text Here</p>
+						<p class="recent-events-date">May 20, 2016</p>
+						<p class="recent-events-inside-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 					</div>
 					<div class="recent-event-inside col-sm-4">
 						<img class="recent-event-inside-img" src="img/recent_events.png">
-						<p class="recent-event-inside-des">Text Here</p>
+						<p class="recent-events-date">May 20, 2016</p>
+						<p class="recent-events-inside-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 					</div>
 					<div class="recent-event-inside col-sm-4">
 						<img class="recent-event-inside-img" src="img/recent_events.png">
-						<p class="recent-event-inside-des">Text Here</p>
+						<p class="recent-events-date">May 20, 2016</p>
+						<p class="recent-events-inside-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 					</div>
 				</div>
 
 
 			</div>
 				<style>
+
+				.recent-events-date{
+					color:#4d568e;
+					font-size:14px;
+					margin-top:12px;
+					font-style: italic;
+					font-family: serif;
+					margin-bottom:5px;
+				}
+				.recent-events-inside-des{
+					font-size:17px;
+					font-family: serif;
+					text-align: left;
+					margin:0;
+					padding:0;
+				}
 					.eye-news-banner{
 						margin-top:100px;
+					}
+				
+					.contain-news-text > p1{
+						text-align: left;
+						font-family: serif;
+						font-size:15px;
 					}
 				</style>
 				<div class="eye-news-banner">
@@ -260,93 +324,87 @@
 
 				<div class="eye-news">
 					<div class="row">
-				  <div class="col-sm-6">
-				    <div class="row eye-news-contain-nested-row">
-				      	<div class="col-md-6">
-				      		<img src="img/recent_events.png" class="eyenewspic" >
-				      	</div>
-				      	<div class="col-md-6">
-				      		<div class="contain-news-text">
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        	</div>
-				      	</div>
-				    </div>
-				    <div class="row eye-news-contain-nested-row">
-				      	<div class="col-md-6">
-				      		<img src="img/recent_events.png" class="eyenewspic" >
-				      	</div>
-				      	<div class="col-md-6">
-				      		<div class="contain-news-text">
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        	</div>
-				      	</div>
-				    </div>
-				    <div class="row eye-news-contain-nested-row">
-				      	<div class="col-md-6">
-				      		<img src="img/recent_events.png" class="eyenewspic" >
-				      	</div>
-				      	<div class="col-md-6">
-				      		<div class="contain-news-text">
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        	</div>
-				      	</div>
-				    </div>
-				 </div>
-				 <div class="col-sm-6">
-				    <div class="row eye-news-contain-nested-row">
-				      	<div class="col-md-6">
-				      		<img src="img/recent_events.png" class="eyenewspic" >
-				      	</div>
-				      	<div class="col-md-6">
-				      		<div class="contain-news-text">
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        	</div>
-				      	</div>
-				    </div>
-				    <div class="row eye-news-contain-nested-row">
-				      	<div class="col-md-6">
-				      		<img src="img/recent_events.png" class="eyenewspic" >
-				      	</div>
-				      	<div class="col-md-6">
-				      		<div class="contain-news-text">
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        	</div>
-				      	</div>
-				    </div>
-				    <div class="row eye-news-contain-nested-row">
-				      	<div class="col-md-6">
-				      		<img src="img/recent_events.png" class="eyenewspic" >
-				      	</div>
-				      	<div class="col-md-6">
-				      		<div class="contain-news-text">
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        		<p1>Lorem Ipsum</p1>
-				        	</div>
-				      	</div>
-				    </div>
+				  		<div class="col-sm-6">
+						    <div class="row eye-news-contain-nested-row">
+						      	<div class="col-md-6">
+						      		<img src="img/recent_events.png" class="eyenewspic" >
+						      	</div>
+						      	<div class="col-md-6">
+						      		<div class="contain-news-text">
+						        		<p1>Lorem Ipsum This is the title of a News Article</p1>
 
-				  </div>
+						        	</div>
+						      	</div>
+						    </div>
+				   			<div class="row eye-news-contain-nested-row">
+						      	<div class="col-md-6">
+						      		<img src="img/recent_events.png" class="eyenewspic" >
+						      	</div>
+						      	<div class="col-md-6">
+						      		<div class="contain-news-text">
+							        	<p1>Lorem Ipsum This is the title of a News Article</p1>
+
+						        	</div>
+						      	</div>
+				    		</div>
+						    <div class="row eye-news-contain-nested-row">
+						      	<div class="col-md-6">
+						      		<img src="img/recent_events.png" class="eyenewspic" >
+						      	</div>
+						      	<div class="col-md-6">
+						      		<div class="contain-news-text">
+						        		<p1>Lorem Ipsum This is the title of a News Article</p1>
+
+						        	</div>
+						      	</div>
+						    </div>
+				 		</div>
+						<div class="col-sm-6">
+						    <div class="row eye-news-contain-nested-row">
+						      	<div class="col-md-6">
+						      		<img src="img/recent_events.png" class="eyenewspic" >
+						      	</div>
+						      	<div class="col-md-6">
+						      		<div class="contain-news-text">
+								        <p1>Lorem Ipsum This is the title of a News Article</p1>
+
+						        	</div>
+						      	</div>
+						    </div>
+						    <div class="row eye-news-contain-nested-row">
+						      	<div class="col-md-6">
+						      		<img src="img/recent_events.png" class="eyenewspic" >
+						      	</div>
+						      	<div class="col-md-6">
+						      		<div class="contain-news-text">
+						        		<p1>Lorem Ipsum This is the title of a News Article</p1>
+						        	</div>
+						      	</div>
+						    </div>
+						    <div class="row eye-news-contain-nested-row">
+						      	<div class="col-md-6">
+						      		<img src="img/recent_events.png" class="eyenewspic" >
+						      	</div>
+						      	<div class="col-md-6">
+						      		<div class="contain-news-text">
+						        		<p1>Lorem Ipsum This is the title of a News Article</p1>
+
+						        	</div>
+						      	</div>
+						    </div>
+				  		</div>
+					</div>
 				</div>
-			</div>
 
 
 			<style>
 				.bg-tint{
+					position:absolute;
 					width:100%;
 					height:100%;
 					background-color:#848799;
 					opacity: 0.4;
+					z-index:0;
 				}
 				.contain-third-slide-content{
 					position: absolute;
@@ -356,14 +414,45 @@
 					right:0;
 				}
 				.contain-second-slide-content{
+					position:absolute;
+					width:100%;
 					z-index:2;
-					top:0;
-					left:0;
-					right:0;
+					bottom:5%;
+					transform:translateY(-50%);
+
 				}
 				.contain-second-slide-content > *{
-					position:absolute;
+					position:relative;
+					display:block;
+					margin:0;
+					letter-spacing: 0px;
 				}
+				.envision{
+					font-weight:100;
+					font-size:32px;
+					font-family: serif;
+				}
+				.clearerfuture{
+					font-weight:500;
+					font-size:45px;
+				}
+				.join-us-btn{
+					padding:15px 25px;
+					color:white;
+					border:1px solid white;
+					font-weight:100;
+					font-size:20px;
+					letter-spacing: 3px;
+					background-color: transparent;
+					display:block;
+					margin:auto;
+					margin-top:30px;
+				}
+				.join-us-btn:hover{
+					background-color:white;
+					color:black;
+				}
+
 			</style>
 
 

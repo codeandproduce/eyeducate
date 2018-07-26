@@ -2,16 +2,18 @@
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+
 	</head>
 
+
 	<body>
-		<div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
+				<div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
 			<div class="nav-content nav-left" style="text-align: center; height: 100%">
 				<ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
-					<li><a href="/"><i>Home</i></a></li>
-					<li><a href="/about"><i class="current-page">About Us</i></a></li>
+					<li><a href="/"><i class="current-page">Home</i></a></li>
+					<li><a href="/about"><i>About Us</i></a></li>
 					<li><a href="/about"><i>Our Story</i></a></li>
-					<li><a href="/about"><i>Events</i></a></li>
+					<li><a href="/events"><i>Events</i></a></li>
 					<li><a href="/about"><i>EYE news</i></a></li>
 					<li><a href="/about"><i>Impact</i></a></li>
 					<li><a href="/about"><i>Media</i></a></li>
@@ -19,110 +21,136 @@
 			</div>
 
 			<style>
-				.nav-left{
-					width:55%;
-					display:inline;
-					float:left;
+
+					.icon-person{
+						margin-bottom:30px;
+					}
+
+				@media(max-width:768px){
+					.contain-big-nav{
+						width:80%;
+					}
+					.nav-left{
+						width:100%;
+					}
+					.line-break{
+						display:none;
+					}
+					.contain-toggle-nav-links{
+						left:0;
+						right:0;
+					}
+					.nav-right{
+						display:none;
+					}
+					.nav_logo{
+						margin-left:0;
+					}
+					.logo_center{
+						padding:0;
+					}
+					.social-right{
+						display:none;
+					}
+					.floating-box{
+						display:none;
+					}
+					.recent-events-heading > *{
+						display:block;
+						margin:auto;
+						float:none;
+						margin-bottom:30px;
+					}
+
+					.contain-third-slide-content{
+						padding-top:90px;
+					}
+					.third-slide-content-inside{
+						display:block;
+						margin:auto;
+						margin-bottom:30px;
+					}
+					.eye-news{
+						padding:0;
+						padding-top:50px;
+					}
+					.contain-instagram{
+						padding:0;
+					}
+					.col-sm-6{
+						padding-left:40px;
+						padding-right:40px;
+					}
+					.row-footer > .col-sm-6{
+						padding:0;
+					}
+					.contain-news-text{
+						margin-top:25px;
+					}
+					.col-sm-4{
+						padding-left:40px;
+						padding-right:40px;
+					}
+					.contain_main_text{
+						margin-top:0;
+					}
+
+
+					.first-slide{
+						height:100%;
+					}
+					.first_big_image{
+						width:55%;
+						display:block;
+						margin:auto;
+						margin-top:70px;
+					}
+					.contain_main_text > h1{
+						font-size:24px;
+					}
+
+					.temp-resize{
+						height:200px;
+					}
 				}
-				.nav-right{
-					width:45%;
-					display:inline;
-					float:right;
+				@media(max-width:410px){
+					.nav_logo{
+						width:auto;
+						height:57px;
+						margin-top:18px;
+					}
+					.first_big_image{
+						width:85%;
+						display:block;
+						margin:auto;
+						margin-top:80px;
+						margin-bottom:20px;
+					}
+					.contain_main_text > h1{
+						font-size:24px;
+					}
+					.heading-h1{
+						width:100%;
+						font-size:28px;
+
+					}
+					.recent-events-heading{
+						padding-bottom:0;
+					}
+					.partners{
+						width:auto;
+					}
+					.eye-love{
+						padding:0;
+					}
+					.eye-love > img{
+						width:100%;
+					}
+					.other-partners > img{
+						width:100%;
+					}
 				}
-				.current-page{
-					text-decoration: underline;
-					opacity:0.7;
-				}
-				.contain-toggle-nav-links{
-				    position: absolute;
-					left: 25%;
-					top: 30%;
-				}
-				.contain-toggle-nav-links > li{
-					font-weight:100;
-					font-size:17px;
-					margin-bottom:15px;
-				}
-				.contain-toggle-nav-links > li > a{
-					color:black;
-				}
-				.contain-toggle-nav-links > li > a:hover{
-					opacity:0.7;
-				}
-				.line-break{
-					position:absolute;
-					left:55%;
-					height:90%;
-					margin-top:5%;
-					width:1px;
-					background-color:rgba(235,235,235,0.8);
-				}
-				.nav-right{
-					padding:30px;
-					padding-top:6%;
-				}
-				.nav-right > h1{
-					border-top:1px solid rgba(235,235,235,0.8);
-					width:80%;
-					display:block;
-					margin:auto;
-					padding-top:45px;
-					font-size:25px;
-					letter-spacing:0.5px;
-				}
-				.subscribe-text-input{
-					margin-top:30px;
-					padding:15px 29px;
-					margin-bottom:5px;
-					width:80%;
-				}
-				.subscribe-text-input:focus{
-					outline:0;
-				}
-				.subscribe-button-nav{
-					margin-top:3px;
-					font-weight:600;
-					border:2px solid black;
-					background-color:none;
-					padding:10px 28px;
-					font-size:15px;
-				}
-				.subscribe-button-nav:hover{
-					text-decoration: underline;
-					color:white;
-					background-color:black;
-				}
-				.nav-toggle-poem{
-					width:80%;
-					display:block;
-					margin:auto;
-					border-top:1px solid rgba(235,235,235,0.8);
-					padding-top:45px;
-					margin-bottom:45px;
-					text-align:center;
-					line-height:30px;
-					font-style: oblique;
-				}
-				.nav-toggle-logo{
-					width:80%;
-					display:block;
-					margin:auto;
-					margin-bottom:70px;
-				}
-				.menu-left{
-					display:block;
-					z-index:100;
-					position:fixed;
-				}
-				.menu-left:focus{
-					outline:0 !important;
-				}
-				.icon-person{
-					margin-bottom:30px;
-				}
-				.big-selected-img{
-					width:100%;
-				}
+
 			</style>
 			<div class="line-break">
 			</div>
@@ -142,6 +170,11 @@
 			</div>
 
 		</div>
+
+
+
+
+
 		<div class="menu-left">
 				<button id="menu_button" class="menu-button">
 		            <span class="menu-button-span shorter-span shorter-span-right"></span>
@@ -177,6 +210,14 @@
 				margin-top:50px;
 				margin-bottom:40px;
 			}
+				.bg-tint{
+					position:absolute;
+					width:100%;
+					height:100%;
+					background-color:#848799;
+					opacity: 0.4;
+					z-index:0;
+				}
 		</style>
 		<div class="second-slide">
 			<div class="bg-tint">
@@ -274,6 +315,12 @@
 				</div>
 				<img style="margin-top:30px; margin-bottom:30px;" class="description-video" src="img/placeholder-2.png">
 			</div>
+			<style>
+			.big-selected-img{
+				width:100%;
+			}
+
+			</style>
 
 			<div class="partners">
 				<h1 class="partners-heading section-heading">PARTNERS</h1>
@@ -291,20 +338,73 @@
 				</div>
 			</div>
 
+
+		<style>
+
+			@media(max-width:768px){
+				.footer{
+					height:auto;
+					padding-bottom:200px;
+				}
+				.contain-one-content{
+					width:100%;
+					padding-bottom:20px;
+					position:relative;
+				}
+				.contain-one-content > *{
+					display:block;
+					margin:auto;
+					text-align: center;
+					margin-bottom:3px;
+				}
+				.qr-code-img{
+					position:absolute;
+					left:0;
+					right:0;
+				}
+			}
+		</style>
+
+
 		<div class="footer">
-					<h1 class="footer-h1">Eyeducate</h1>
-					<div class="toggle-follow">
-						<div class="follow-contain">
-							<ol>
-								<li><a href="https://www.youtube.com/channel/UCtBuc7YIpA6gYphpm7YcmKA/videos" class="aicon"><i class="fa fa-youtube"></i></a></li>
-								<li><a href="https://www.instagram.com/amptonerecords/" class="aicon"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="https://soundcloud.com/amptonerecords" class="aicon"><i class="fa fa-soundcloud"></i></a></li>
-							</ol>
+					<h2 class="footer-h2" style="padding-left:40px; padding-right:40px">EYEducate is a non-profit organization based in Shanghai American School</h2>
+					<h2 class="footer-h2" style="padding-left:40px; padding-right:40px">We raise awareness about Ophthalmic Diseases and Disorders</h2>
+					<div class="row-footer" style="padding-left: 15%; padding-right: 15%; margin-top: 30px">
+						<div class="col-sm-6">
+							<div class="col-md-6">
+								<div class="contain-one-content">
+									<h3 class="footer-p1">ADDRESS</h3>
+									<p class="footer-p2">Shanghai American School Puxi Campus</p>
+									<p class="footer-p2">258 JinFeng Road</p>
+									<p class="footer-p2">HuaCao Town</p>
+									<p class="footer-p2">MinHang District</p>
+									<p class="footer-p2">Shanghai, PRC 201107</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="contain-one-content">
+									<h3 class="footer-p1">联系地址</h3>
+									<p class="footer-p2">上海美国学校普西校区</p>
+									<p class="footer-p2">上海市闵行区华漕镇</p>
+									<p class="footer-p2">金丰路258号</p>
+									<p class="footer-p2">中国 上海 201107</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="col-md-6">
+								<div class="cotain-one-content">
+									<button href="#" class="footer-button-contact"><a id="contact-link-footer" href="mailto:sas.eyeducate@gmail.com">sas.eyeducate@gmail.com</a></button>
+									<button href="#" class="footer-button-contact"><a id="contact-link-footer" href="https://instagram.com/eyeducate">Instagram: eyeducate</a></button>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="contain-one-content">
+									<img src="img/qr_code.png" class="qr-code-img">
+								</div>
+							</div>
 						</div>
 					</div>
-						<button href="#" class="footer-button-contact"><a id="contact-link-footer" href="/contact">Contact us</a></button>
-					<p>Copyright © 2018 Eyeducate. All rights reserved.</p>
-		</div>
 
 		<script src="scripts/jquery-3.2.1.js"/>f
 		<script src="scripts/bootstrap.min.js"></script>

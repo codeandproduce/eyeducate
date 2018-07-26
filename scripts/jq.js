@@ -24,6 +24,10 @@ $(document).on('click', '.menu-button', function(){
     $(".contain-big-nav").css('left','-1000px');
 
     $(".nav").children().css("display","inline-block");
+    if($(window).width() <= 778){
+        $(".social-right").css("display", "none");
+
+    }
 
     menuOpened = false;
   }
@@ -40,7 +44,6 @@ function parallax() {
   console.log("($(document).height()/4)*2 height", ($(document).height()/4)*2);
   console.log("scroll: "+wScroll);
 
-  $('.floating-box').css('top', 33 + (wScroll*.015)+'em')
 
 
   if(wScroll > ($(document).height()/4.5)*2){

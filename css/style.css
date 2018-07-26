@@ -59,13 +59,6 @@ body{
 	text-align: center;
 	transform: translate(-50%, -50%);
 }
-.centered-down {
-	margin-top:30px;
-	position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
 
 .contain-instagram {
 	width:100%;
@@ -131,7 +124,6 @@ body{
 	height:70px;
 	display:block;
 	margin:auto;
-	margin-left:100px;
 	margin-top:12px;
 }
 #recent-events{
@@ -156,8 +148,10 @@ body{
 
 
 .section-heading{
-	letter-spacing: 2px;
+	letter-spacing: 7px;
 	color: #75798e;
+	font-size:26px;
+
 }
 .recent-events-heading{
 	padding-top:100px;
@@ -166,7 +160,7 @@ body{
 .heading-h1{
 	display:block;
 	margin:auto;
-	width:300px;
+	width:500px;
 	text-align:center;
 }
 
@@ -207,34 +201,40 @@ body{
 	height:60px;
 	position:relative;
 	float:left;
-	margin-left:80px;
 }
 .social-right{
-	padding:20px;
+	padding:35px;
 	display:inline;
 	float:right;
 	margin-top:7px;
 }
 .social-insta{
-	width:35px;
-	height:35px;
+	width:25px;
+	height:25px;
 	margin-left:10px;
 	display:inline-block;
 	margin-right:20px;
 }
 .social-email{
-	width:45px;
-	height:45px;
+	width:25px;
+	height:25px;
 	margin-left:10px;
 	display:inline-block;
 }
 
 .social-wechat {
-	width:45px;
-	height:45px;
+	width:25px;
+	height:25px;
 	margin-left:10px;
 	display:inline-block;
 }
+.social-youtube{
+	width:25px;
+	height:25px;
+	display:inline-block;
+}
+
+
 
 .social-wechat-popup {
 	display:inline-block;
@@ -253,11 +253,6 @@ body{
 	margin-top:20px;
 }
 
-.social-youtube{
-	width:50px;
-	height:50px;
-	display:inline-block;
-}
 
 
 .third-slide{
@@ -289,6 +284,7 @@ text-align: center;
   margin:0;
   width:100%;
   padding:85px;
+
 }
 .eye-news-contain-nested-row{
 	margin-bottom:30px;
