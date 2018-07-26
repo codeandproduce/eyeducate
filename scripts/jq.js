@@ -15,6 +15,8 @@ $(document).on('click', '.menu-button', function(){
     // show nothing but the menu button
     $(".nav").children().css("display","none");
     $(".menu-left").css("display", "block");
+    $(".social-right").css("display", "none");
+
     menuOpened=true;
   }else{
     $('.shorter-span-left').css('transform','translate(0,0) rotate(0deg)  scale(1)');
@@ -24,9 +26,10 @@ $(document).on('click', '.menu-button', function(){
     $(".contain-big-nav").css('left','-1000px');
 
     $(".nav").children().css("display","inline-block");
-    if($(window).width() <= 778){
-        $(".social-right").css("display", "none");
 
+
+    if($(window).width() <= 778){
+      $(".social-right").css("display", "none");
     }
 
     menuOpened = false;

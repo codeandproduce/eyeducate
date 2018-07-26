@@ -4,6 +4,13 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
+      .contain-one-block{
+        padding:0;
+        height:300px;
+      }
+      .our-story-heading{
+        margin-left:15%; font-size: 30px; padding-bottom:30px; color:#75798e;
+      }
       @media(max-width: 768px){
           .contain-big-nav{
             width:80%;
@@ -24,14 +31,68 @@
           .nav_logo{
             margin-left:0;
           }
+          .logo_center{
+            padding:0;
+          }
           .social-right{
             display:none;
           }
-          .floating-box{
+          .our-story-description{
+            text-align: center;
+          }
+          .contain-one-block{
+            height:auto;
+          }
+          .contain-one-block > img{
+            width:90%;
+            margin:30px 0;
+          }
+          #disappear{
             display:none;
+          }
+          .our-story-heading{
+            width:100%;
+            text-align: center;
+            margin:0;
+            margin-top:30px;
           }
 
         }
+      
+      @media(max-width:410px){
+        .social-right{
+          display:none !important;
+        }
+          .nav_logo{
+            width:auto;
+            height:57px;
+            margin-top:18px;
+          }
+          .first_big_image{
+            width:85%;
+            display:block;
+            margin:auto;
+            margin-top:80px;
+            margin-bottom:20px;
+          }
+          .contain_main_text > h1{
+            font-size:24px;
+          }
+          .heading-h1{
+            width:100%;
+            font-size:28px;
+
+          }
+          .recent-events-heading{
+            padding-bottom:0;
+          }
+          .contain-one-block > img{
+            display:block;
+            margin:auto;
+            margin-top:40px;
+          }
+        }
+
 
 
   </style>
@@ -104,79 +165,61 @@
     .nav{
       z-index:6;
     }
-    .floating-box{
-      transition: none;
-      position:absolute;
-      width:400px;
-      height:300px;
-      border:3px solid #b4b6c3;
-      border-radius: 5px;
-      left:8%;
-      top:33em;
-      z-index:5;
-      background-color: white;
-      padding:30px;
-      background:
-        linear-gradient(45deg, #8f909b 45px, transparent 45px)64px 64px,
-        linear-gradient(45deg, #8f909b 45px, transparent 45px,transparent 91px, #a1a3ad 91px, #a1a3ad 135px, transparent 135px),
-        linear-gradient(-45deg, #8f909b 23px, transparent 23px, transparent 68px,#8f909b 68px,#8f909b 113px,transparent 113px,transparent 158px,#8f909b 158px);
-      background-color:#a1a3ad;
-      background-size: 128px 128px;
-    }
-    .floating-h1{
-      width:100%;
-      text-align: center;
-      color:white;
-      text-decoration: underline;
-      margin-bottom:40px;
-    }
-    .floating-short-des{
-      width:100%;
-      text-align: center;
-      color:white;
-    }
-    .contain-image{
-    }
     .our-story-pic{
-      width:100%;
+      height:100%;
+      width:auto;
+      display:block;
+      margin:auto;
     
+    }
+    .our-story{
+      padding-bottom:80px;
+    }
+
+
+    .contain-two{
+      margin-bottom:40px;
     }
     </style>
     <!--Main Content !-->
     <div class="our-story">
-    <h style="margin-left:15%; font-size: 25px;"> OUR STORY </h>
-      <div class="row">
-        <div class="col-md-6">
-        <p class="our-story-description">Based in Shanghai American School, Eyeducate
-        raises awareness about the prevalent issue of myopia
-        and hyperopia (nearsigntness/farsightedness) which affects
-        approximately 3.5 billion people today. As the use of technology
-        is becoming ubiquitous in our lives, it is truly important for
-        younger students to be educated about proper methods to protect
-        their eyesight. Many younger children in more rural areas of China are not
-        as educated about this topic, therefore, it is our goal to take this matter
-        into our own hands.</p>
+      <h1 class="our-story-heading"> OUR STORY </h1>
+      <div class="row contain-two">
+        <div class="col-md-6 contain-one-block">
+          <p class="our-story-description">Based in Shanghai American School, Eyeducate
+          raises awareness about the prevalent issue of myopia
+          and hyperopia (nearsigntness/farsightedness) which affects
+          approximately 3.5 billion people today. As the use of technology
+          is becoming ubiquitous in our lives, it is truly important for
+          younger students to be educated about proper methods to protect
+          their eyesight. Many younger children in more rural areas of China are not
+          as educated about this topic, therefore, it is our goal to take this matter
+          into our own hands.</p>
         </div>
-        <div class="col-md-6 contain-image">
-        <img src="img/launch-class.jpg" class="our-story-pic">
+        <div class="col-md-6 contain-one-block">
+          <img src="img/launch-class.jpg" class="our-story-pic">
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 contain-image">
-        <img src="img/launch-class.jpg" class="our-story-pic" >
+      
+      <div class="row contain-two">
+        <div class="col-md-6 contain-one-block">
+          <img id="disappear" src="img/launch-class.jpg" class="our-story-pic" >
         </div>
-        <div class="col-md-6">
-        <p class="our-story-description">Currently, EYEducate works directly wiht the Eye Love Vision Fund, a registered organization that
-        has specifically designed a bilingual lesson to be taught to students around six years old, along with the support
-        of Safe Kids China, a sub-branch of Safe Kids Worldwide and the Beijing United Charity Foundation to both teach students
-        about how to protect their eyesight and to donate eye protection lesson toolkits to schools in rural China.</p>
+        <div class="col-md-6 contain-one-block">
+          <p class="our-story-description">Currently, EYEducate works directly wiht the Eye Love Vision Fund, a registered organization that
+          has specifically designed a bilingual lesson to be taught to students around six years old, along with the support
+          of Safe Kids China, a sub-branch of Safe Kids Worldwide and the Beijing United Charity Foundation to both teach students
+          about how to protect their eyesight and to donate eye protection lesson toolkits to schools in rural China.</p>
+        </div>
       </div>
     </div>
-  </div>
 
     <script src="scripts/jquery-3.2.1.js"/>
     <script>src="scripts/bootstrap.min.js"></script>
     <script src="scripts/jq.js"/>
+
+
+
 
 <script>
       $("#menu_button").click(function(){
@@ -184,6 +227,15 @@
         $(".contain-big-nav").css('left','0px');
       });
     </script>
+
+
+
+
+
+
+
+
+
 
 
     <style>
