@@ -1,5 +1,6 @@
 docker run \
-	--env-file /root/amptone/env.list \
-	-v /root/amptone:/src \
+	-v /root/eyeducate:/src \
+	-w /src \
+	-e PORT=2986 \
 	-p 2986:2986 \
-	-d ampnode
+	-d ornt-note

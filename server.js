@@ -23,7 +23,16 @@ app.get('/events', (req, res)=>{
 app.get('/eye-news', (req, res)=>{
 	res.sendFile(path.join(__dirname + '/eye-news.html'));
 })
+app.get('/media', (req, res) => {
+	res.sendFile(path.join(__dirname + '/media.html'));
+});
+app.get('/our-story', (req, res) => {
+	res.sendFile(path.join(__dirname + '/our-story.html'));
+});
 
+app.get('/join-us', (req, res) => {
+	res.sendFile(path.join(__dirname + '/join-us.html'));
+});
 
 
 app.listen(port, () => {
