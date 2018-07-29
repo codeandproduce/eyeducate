@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <title>EYEducate: Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
       @media(max-width: 768px){
           .contain-big-nav{
@@ -39,103 +40,119 @@
 </head>
 
 <body>
-  <div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
-    <div class="nav-content nav-left" style="text-align: center; height: 100%">
-      <ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
-        <li><a href="/"><i class="current-page">Home</i></a></li>
-        <li><a href="/about"><i>About Us</i></a></li>
-        <li><a href="/about"><i>Our Story</i></a></li>
-        <li><a href="/about"><i>Events</i></a></li>
-        <li><a href="/about"><i>EYE news</i></a></li>
-        <li><a href="/about"><i>Impact</i></a></li>
-        <li><a href="/about"><i>Media</i></a></li>
-      </ol>
-    </div>
 
-    <style>
 
-    </style>
-    <div class="line-break">
-    </div>
-
-    <div class="nav-right" style="text-align: center;">
-      <img class="nav-toggle-logo" src="img/nav_logo.png">
-      <div class="nav-toggle-poem">
-      “No one has ever become poor by giving.” </br>
-      -Anne Frank
-
+    <div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
+      <div class="nav-content nav-left" style="text-align: center; height: 100%">
+        <ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
+          <li><a href="/"><i>Home</i></a></li>
+          <li><a href="/about"><i class="current-page">About Us</i></a></li>
+          <li><a href="/our-story"><i>Our Story</i></a></li>
+          <li><a href="/events"><i>Events</i></a></li>
+          <li><a href="/eye-news"><i>EYE news</i></a></li>
+          <li><a href="/media"><i>Media</i></a></li>
+        </ol>
       </div>
-      <h1><i>Subscribe</i></h1>
-      <form>
-        <input class="subscribe-text-input" type="text" id="email" placeholder="Email Address">
-      </form>
-      <button class="subscribe-button-nav">SIGN UP</button>
-    </div>
 
-  </div>
+      <style>
+        @media(max-width:768px){
+          .contain-big-nav{
+            width:80%;
+          }
+          .nav-left{
+            width:100%;
+          }
+          .line-break{
+            display:none;
+          }
+          .contain-toggle-nav-links{
+            left:0;
+            right:0;
+          }
+          .nav-right{
+            display:none;
+          }
+          .nav_logo{
+            margin-left:0;
+          }
+          .logo_center{
+            padding:0;
+          }
+          .social-right{
+            display:none;
+          }
 
+        }
+        @media(max-width:410px){
+          .nav_logo{
+            width:auto;
+            height:57px;
+            margin-top:18px;
+          }
+   
+        }
+      </style>
 
-  <!-- Navigation -->
-  <div class="menu-left">
-      <button id="menu_button" class="menu-button">
-              <span class="menu-button-span shorter-span shorter-span-right"></span>
-              <span class="menu-button-span span-center"></span>
-              <span class="menu-button-span shorter-span shorter-span-left"></span>
-            </button>
-  </div>
-  <div class="nav">
+        <div class="line-break">
+      </div>
 
-    <div class="logo_center">
-      <img class="nav_logo" src="img/nav_logo.png">
-    </div>
-    <div class="social-right">
-      <a href="https://youtube.com"><img class="social-youtube" src="img/social_youtube.png"></a>
-        <div class="social-wechat-popup">
-          <img class="social-wechat" src="img/social_wechat.png"/>
-          <img class="social-qr-code" src="img/qr_code.png"/>
+      <div class="nav-right" style="text-align: center;">
+        <img class="nav-toggle-logo" src="/img/nav_logo.png">
+        <div class="nav-toggle-poem">
+        “No one has ever become poor by giving.” </br>
+        -Anne Frank
+
         </div>
-        <a href="mailto:sas.eyeducate@gmail.com"><img class="social-email" src="img/social_email.png"></a>
-        <a href="https://instagram.com/eyeducate"><img class="social-insta" src="img/social_insta.png"></a>
+        <h1><i>Subscribe</i></h1>
+        <form>
+          <input class="subscribe-text-input" type="text" id="email" placeholder="Email Address">
+        </form>
+        <button class="subscribe-button-nav">SIGN UP</button>
+      </div>
+
     </div>
-  </div>
-  <!-- ! -->
+
+
+
+
+
+    <div class="menu-left">
+        <button id="menu_button" class="menu-button">
+                <span class="menu-button-span shorter-span shorter-span-right"></span>
+                <span class="menu-button-span span-center"></span>
+                <span class="menu-button-span shorter-span shorter-span-left"></span>
+          </button>
+    </div>
+    <div class="nav" style="z-index:2;">
+
+      <div class="logo_center">
+        <img class="nav_logo" src="/img/nav_logo.png">
+      </div>
+      <div class="social-right">
+        <a href="https://youtube.com"><img class="social-youtube" src="/img/social_youtube.png"></a>
+        <div class="social-wechat-popup">
+          <img class="social-wechat" src="/img/social_wechat.png"/>
+          <img class="social-qr-code" src="/img/qr_code.png"/>
+        </div>
+        <a href="mailto:sas.eyeducate@gmail.com"><img class="social-email" src="/img/social_email.png"></a>
+        <a href="https://instagram.com/eyeducate"><img class="social-insta" src="/img/social_insta.png"></a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
 
 
   <style>
     .nav{
       z-index:6;
     }
-    .floating-box{
-      transition: none;
-      position:absolute;
-      width:400px;
-      height:300px;
-      border:3px solid #b4b6c3;
-      border-radius: 5px;
-      left:8%;
-      top:33em;
-      z-index:5;
-      background-color: white;
-      padding:30px;
-      background:
-        linear-gradient(45deg, #8f909b 45px, transparent 45px)64px 64px,
-        linear-gradient(45deg, #8f909b 45px, transparent 45px,transparent 91px, #a1a3ad 91px, #a1a3ad 135px, transparent 135px),
-        linear-gradient(-45deg, #8f909b 23px, transparent 23px, transparent 68px,#8f909b 68px,#8f909b 113px,transparent 113px,transparent 158px,#8f909b 158px);
-      background-color:#a1a3ad;
-      background-size: 128px 128px;
-    }
-    .floating-h1{
-      width:100%;
-      text-align: center;
-      color:white;
-      text-decoration: underline;
-      margin-bottom:40px;
-    }
-    .floating-short-des{
-      width:100%;
-      text-align: center;
-      color:white;
-    }
+
 
 
 
@@ -282,7 +299,7 @@ Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
           </div>
           <div class="col-md-6">
             <div class="contain-break-image">
-              <img class="break-image" src="img/recent_events.PNG">
+              <img class="break-image" src="/img/recent_events.PNG">
             </div>
           </div>
         </div>
@@ -296,7 +313,14 @@ Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
     width: 33.33%;
     padding: 10px;
 }
-
+@media screen and (max-width: 600px) {
+.column {
+    float: left;
+    width: 33.33%;
+    padding-left: 20%;
+    float: left;
+}
+}
 .row:after {
     content: "";
     display: table;
@@ -337,9 +361,9 @@ hr {
 
 <div class="row">
   <div class="column">
-   	<img class="events-image" src="img/recent_events.PNG">
+   	<img class="events-image" src="/img/recent_events.PNG">
     <h2 style="text-align:left; margin-left:0px;">Event name</h2>
-    <div class="date"><strong>July 4th 2018</strong></div>
+    <div class="date"><strong><em>July 4th 2018</em></strong></div>
     <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
     leo eget bibendum sodales, augue velit cursus nunc,</p>
@@ -350,9 +374,9 @@ hr {
 
   </div>
   <div class="column">
-    <img class="events-image" src="img/recent_events.PNG">
+    <img class="events-image" src="/img/recent_events.PNG">
     <h2 style="text-align:left; margin-left:0px;">Event name</h2>
-    <div class="date"><strong>July 4th 2018</strong></div>
+    <div class="date"><strong><em>July 4th 2018</em></strong></div>
     <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
     leo eget bibendum sodales, augue velit cursus nunc,</p>
@@ -361,9 +385,9 @@ hr {
   </div>
 
   <div class="column" >
-   	<img class="events-image" src="img/recent_events.PNG">
+   	<img class="events-image" src="/img/recent_events.PNG">
     <h2 style="text-align:left; margin-left:0px;">Event name</h2>
-    <div class="date"><strong>July 4th 2018</strong></div>
+    <div class="date"><strong><em>July 4th 2018</em></strong></div>
     <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
     leo eget bibendum sodales, augue velit cursus nunc,</p>
@@ -376,9 +400,9 @@ hr {
 
 <div class="row">
   <div class="column">
-   	<img class="events-image" src="img/recent_events.PNG">
+   	<img class="events-image" src="/img/recent_events.PNG">
     <h2 style="text-align:left; margin-left:0px;">Event name</h2>
-    <div class="date"><strong>July 4th 2018</strong></div>
+    <div class="date"><strong><em>July 4th 2018</em></strong></div>
     <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
     leo eget bibendum sodales, augue velit cursus nunc,</p>
@@ -387,9 +411,9 @@ hr {
 
   </div>
   <div class="column">
-    <img class="events-image" src="img/recent_events.PNG">
+    <img class="events-image" src="/img/recent_events.PNG">
     <h2 style="text-align:left; margin-left:0px;">Event name</h2>
-    <div class="date"><strong>July 4th 2018</strong></div>
+    <div class="date"><strong><em>July 4th 2018</em></strong></div>
     <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
     leo eget bibendum sodales, augue velit cursus nunc,</p>
@@ -398,9 +422,9 @@ hr {
 
   </div>
   <div class="column" >
-   	<img class="events-image" src="img/recent_events.PNG">
+   	<img class="events-image" src="/img/recent_events.PNG">
     <h2 style="text-align:left; margin-left:0px;">Event name</h2>
-    <div class="date"><strong>July 4th 2018</strong></div>
+    <div class="date"><strong><em>July 4th 2018</em></strong></div>
     <p class="events-text">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
     Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
     leo eget bibendum sodales, augue velit cursus nunc,</p>
@@ -425,6 +449,11 @@ hr {
             .container{
             	width:80%;
             	margin-bottom:20%;
+            }
+            @media screen and (max-width: 600px) {
+              .container{
+              	margin-bottom:40%;
+              }
             }
 
         </style>
@@ -538,7 +567,7 @@ hr {
               </div>
               <div class="col-md-6">
                 <div class="contain-one-content">
-                  <img src="img/qr_code.png" class="qr-code-img">
+                  <img src="/img/qr_code.png" class="qr-code-img">
                 </div>
               </div>
             </div>
