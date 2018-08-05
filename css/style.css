@@ -346,7 +346,8 @@ text-align: center;
 	display:inline-block;
 	margin:auto;
 	width:100%;
-	padding: 100px
+	padding-left: 100px;
+	padding-right:100px;
 }
 .temp-resize {
 	height:120px;
@@ -377,7 +378,7 @@ text-align: center;
 	display:block;
 	margin:auto;
 	width:70%;
-	padding:50px;
+	padding:25px;
 }
 
 .partners-heading{
@@ -564,7 +565,7 @@ text-align: center;
 			width:100%;
 			padding-top:60px;
 			padding-bottom:80px;
-			height: 400px;
+			height:400px;
 		}
 		.footer img{
 			display:block;
@@ -696,7 +697,7 @@ text-align: center;
 			margin-top:30px;
 			margin-left:10%;
 			margin-right:10%;
-			word-wrap: break-word; 
+			word-wrap: break-word;
 			text-align: left;
 		}
 

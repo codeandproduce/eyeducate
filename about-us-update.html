@@ -4,14 +4,12 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
-
 	</head>
 
-
 	<body>
-				<div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
+		<div class="contain-big-nav" style="display:block; top:0px; bottom: 0px;">
 			<div class="nav-content nav-left" style="text-align: center; height: 100%">
-        <ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
+      	<ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
           <li><a href="/"><i>Home</i></a></li>
           <li><a href="/about"><i class="current-page">About Us</i></a></li>
           <li><a href="/our-story"><i>Our Story</i></a></li>
@@ -22,134 +20,130 @@
 			</div>
 
 			<style>
-
 					.icon-person{
-					margin-bottom: 25px;
+					margin-bottom: 5px;
+					}
+					@media(max-width:768px){
+						.contain-big-nav{
+							width:80%;
+						}
+						.nav-left{
+							width:100%;
+						}
+						.line-break{
+							display:none;
+						}
+						.contain-toggle-nav-links{
+							left:0;
+							right:0;
+						}
+						.nav-right{
+							display:none;
+						}
+						.nav_logo{
+							margin-left:0;
+						}
+						.logo_center{
+							padding:0;
+						}
+						.social-right{
+							display:none;
+						}
+						.floating-box{
+							display:none;
+						}
+						.recent-events-heading > *{
+							display:block;
+							margin:auto;
+							float:none;
+							margin-bottom:30px;
+						}
+
+						.contain-third-slide-content{
+							padding-top:90px;
+						}
+						.third-slide-content-inside{
+							display:block;
+							margin:auto;
+							margin-bottom:30px;
+						}
+						.eye-news{
+							padding:0;
+							padding-top:50px;
+						}
+						.contain-instagram{
+							padding:0;
+						}
+						.col-sm-6{
+							padding-left:40px;
+							padding-right:40px;
+						}
+						.row-footer > .col-sm-6{
+							padding:0;
+						}
+						.contain-news-text{
+							margin-top:25px;
+						}
+						.col-sm-4{
+							padding-left:40px;
+							padding-right:40px;
+						}
+						.contain_main_text{
+							margin-top:0;
+						}
+						.first-slide{
+							height:100%;
+						}
+						.first_big_image{
+							width:55%;
+							display:block;
+							margin:auto;
+							margin-top:70px;
+						}
+						.contain_main_text > h1{
+							font-size:24px;
+						}
 					}
 
-				@media(max-width:768px){
-					.contain-big-nav{
-						width:80%;
-					}
-					.nav-left{
-						width:100%;
-					}
-					.line-break{
-						display:none;
-					}
-					.contain-toggle-nav-links{
-						left:0;
-						right:0;
-					}
-					.nav-right{
-						display:none;
-					}
-					.nav_logo{
-						margin-left:0;
-					}
-					.logo_center{
-						padding:0;
-					}
-					.social-right{
-						display:none;
-					}
-					.floating-box{
-						display:none;
-					}
-					.recent-events-heading > *{
-						display:block;
-						margin:auto;
-						float:none;
-						margin-bottom:30px;
-					}
+					@media(max-width:410px){
+						.nav_logo{
+							width:auto;
+							height:57px;
+							margin-top:18px;
+						}
+						.first_big_image{
+							width:85%;
+							display:block;
+							margin:auto;
+							margin-top:80px;
+							margin-bottom:20px;
+						}
+						.contain_main_text > h1{
+							font-size:24px;
+						}
+						.heading-h1{
+							width:100%;
+							font-size:28px;
 
-					.contain-third-slide-content{
-						padding-top:90px;
+						}
+						.recent-events-heading{
+							padding-bottom:0;
+						}
+						.partners{
+							width:auto;
+						}
+						.eye-love{
+							padding:0;
+						}
+						.eye-love > img{
+							width:100%;
+						}
+						.other-partners > img{
+							width:100%;
+						}
 					}
-					.third-slide-content-inside{
-						display:block;
-						margin:auto;
-						margin-bottom:30px;
-					}
-					.eye-news{
-						padding:0;
-						padding-top:50px;
-					}
-					.contain-instagram{
-						padding:0;
-					}
-					.col-sm-6{
-						padding-left:40px;
-						padding-right:40px;
-					}
-					.row-footer > .col-sm-6{
-						padding:0;
-					}
-					.contain-news-text{
-						margin-top:25px;
-					}
-					.col-sm-4{
-						padding-left:40px;
-						padding-right:40px;
-					}
-					.contain_main_text{
-						margin-top:0;
-					}
-
-
-					.first-slide{
-						height:100%;
-					}
-					.first_big_image{
-						width:55%;
-						display:block;
-						margin:auto;
-						margin-top:70px;
-					}
-					.contain_main_text > h1{
-						font-size:24px;
-					}
-
-				}
-				@media(max-width:410px){
-					.nav_logo{
-						width:auto;
-						height:57px;
-						margin-top:18px;
-					}
-					.first_big_image{
-						width:85%;
-						display:block;
-						margin:auto;
-						margin-top:80px;
-						margin-bottom:20px;
-					}
-					.contain_main_text > h1{
-						font-size:24px;
-					}
-					.heading-h1{
-						width:100%;
-						font-size:28px;
-
-					}
-					.recent-events-heading{
-						padding-bottom:0;
-					}
-					.partners{
-						width:auto;
-					}
-					.eye-love{
-						padding:0;
-					}
-					.eye-love > img{
-						width:100%;
-					}
-					.other-partners > img{
-						width:100%;
-					}
-				}
-
 			</style>
+
 			<div class="line-break">
 			</div>
 
@@ -158,7 +152,6 @@
 				<div class="nav-toggle-poem">
 				“No one has ever become poor by giving.” </br>
 				-Anne Frank
-
 				</div>
 				<h1><i>Subscribe</i></h1>
 				<form>
@@ -166,18 +159,17 @@
 				</form>
 				<button class="subscribe-button-nav">SIGN UP</button>
 			</div>
-
 		</div>
 
 		<div class="menu-left">
-				<button id="menu_button" class="menu-button">
-		            <span class="menu-button-span shorter-span shorter-span-right"></span>
-		            <span class="menu-button-span span-center"></span>
-		            <span class="menu-button-span shorter-span shorter-span-left"></span>
-          		</button>
+			<button id="menu_button" class="menu-button">
+		  	<span class="menu-button-span shorter-span shorter-span-right"></span>
+		    <span class="menu-button-span span-center"></span>
+		    <span class="menu-button-span shorter-span shorter-span-left"></span>
+  		</button>
 		</div>
-		<div class="nav" style="z-index:2;">
 
+		<div class="nav" style="z-index:2;">
 			<div class="logo_center">
 				<img class="nav_logo" src="img/nav_logo.png">
 			</div>
@@ -200,27 +192,25 @@
 				margin-top:40px;
 				font-size:50px;
 			}
-
-				.bg-tint{
-					position:absolute;
-					width:100%;
-					height:100%;
-					background-color:#848799;
-					opacity: 0.4;
-					z-index:0;
-				}
+			.bg-tint{
+				position:absolute;
+				width:100%;
+				height:100%;
+				background-color:#848799;
+				opacity: 0.4;
+				z-index:0;
+			}
 		</style>
+
 		<div class="second-slide">
 			<div class="bg-tint">
 			</div>
 			<div class="contain-second-slide-content">
-				<h1 style="font-style: italic" class="centered-up">
-				 	About Us
-				</h1>
+				<h1 style="font-style: italic" class="centered-up">About Us</h1>
 			</div>
 		</div>
 
-			<style>
+		<style>
 			.members-bar{
 				padding-left: 15%;
 				padding-right:15%;
@@ -268,145 +258,214 @@
 				margin-bottom:10px;
 				margin-top:10px;
 			}
-			</style>
+			@media(max-width:410px){
+				.profile-slide{
+					padding:0px;
+				}
+				.membar-center{
+					font-size:15px;
+				}
+			}
+		</style>
 
-			<div class="contain profile-slide">
-				<div class="row members-bar">
-					<div class="col-md-4">
-						<button class="membar-center h1 tablink section-heading" onclick="openPage('Executives',this, 'silver')"id="defaultOpen">Executives</button>
-					</div>
-					<div class="col-md-4">
-						<button class="membar-center h1 tablink section-heading" onclick="openPage('Members',this, 'silver')" id="defaultOpen">Members</button>
-					</div>
-					<div class="col-md-4">
-						<button class="membar-center h1 tablink section-heading" onclick="openPage('Constitution',this,'silver')">Constitution</button>
-					</div>
+		<div class="contain profile-slide">
+			<div class="row members-bar">
+				<div class="col-md-4">
+					<button class="membar-center h1 tablink section-heading" onclick="openPage('Executives',this, 'silver')"id="defaultOpen">Executives</button>
 				</div>
-				<div id="Executives" class="tabcontent">
-					<div class="row">
-						<div class="col-md-4 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-							<h1 style="text-align:center;">BL</br>Founder & President</h1>
-						</div>
-						<div class="col-md-4 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-							<h1 style="text-align:center;">Random</br>Quote</h1>
-						</div>
-						<div class="col-md-4 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-							<h1 style="text-align:center;">RH</br>Vice President</h1>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-							<h1 style="text-align:center;">AW</h1>
-						</div>
-						<div class="col-md-4 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-							<h1 style="text-align:center;">DL</h1>
-						</div>
-						<div class="col-md-4 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-							<h1 style="text-align:center;">OL</h1>
-						</div>
-					</div>
+				<div class="col-md-4">
+					<button class="membar-center h1 tablink section-heading" onclick="openPage('Members',this, 'silver')" id="defaultOpen">Members</button>
 				</div>
-				<div id="Members" class="tabcontent">
-					<div class="row">
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-2 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-					</div>
+				<div class="col-md-4">
+					<button class="membar-center h1 tablink section-heading" onclick="openPage('Constitution',this,'silver')">Constitution</button>
 				</div>
-				<div id="Constitution" class="tabcontent">
-					<div class="row">
-						<div class="col-md-3 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-3 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-3 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-3 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-3 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-3 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-3 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-						<div class="col-md-3 icon-person">
-							<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
-						</div>
-					</div>
 			</div>
+			<style>
+			.exec-name{
+				text-align:center;
+				margin-top:10px;
+				margin-bottom:0px;
+				font-size:24px;
+				font-weight:bold;
+				letter-spacing:3px;
+			}
+			.exec-title{
+				text-align:center;
+				margin-top:0px;
+				font-size:16px;
+			}
+			.temp-quote{
+				text-align:center;
+				margin-top:10px;
+				font-size:24px;
+			}
+			@media(max-width:410px){
+				.exec-name{
+					font-size:18px;
+				}
+				.exec-title{
+					font-size:12px;
+				}
+				.temp-quote{
+					font-size:18px;
+				}
+			}
+			</style>
+			<div id="Executives" class="tabcontent">
+				<div class="row">
+					<div class="col-md-4 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h1 class="exec-name">Bob Thompson</h1>
+						<h3 class="exec-title">Founder & President</h3>
+					</div>
+					<div class="col-md-4 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h2 class="temp-quote">"A Lovely Quote"</h3>
+					</div>
+					<div class="col-md-4 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h1 class="exec-name">Bob Thompson</h1>
+						<h3 class="exec-title">Vice President</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h1 class="exec-name">Bob Thompson</h1>
+					</div>
+					<div class="col-md-4 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h1 class="exec-name">Bob Thompson</h1>
+					</div>
+					<div class="col-md-4 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h1 class="exec-name">Bob Thompson</h1>
+					</div>
+				</div>
+			</div>
+			<div id="Members" class="tabcontent">
+				<div class="row">
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<p style="text-align:center;">Name</p>
+					</div>
+				</div>
+			</div>
+			<div id="Constitution" class="tabcontent">
+				<div class="row">
+					<div class="col-md-3 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h4 style="text-align:center;">Name</h4>
+					</div>
+					<div class="col-md-3 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h4 style="text-align:center;">Name</h4>
+					</div>
+					<div class="col-md-3 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h4 style="text-align:center;">Name</h4>
+					</div>
+					<div class="col-md-3 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h4 style="text-align:center;">Name</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h4 style="text-align:center;">Name</h4>
+					</div>
+					<div class="col-md-3 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h4 style="text-align:center;">Name</h4>
+					</div>
+					<div class="col-md-3 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h4 style="text-align:center;">Name</h4>
+					</div>
+					<div class="col-md-3 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<h4 style="text-align:center;">Name</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
 			<script>
 				function openPage(pageName,elmnt,color) {
-				    var i, tabcontent, tablinks;
+				   	var i, tabcontent, tablinks;
 				    tabcontent = document.getElementsByClassName("tabcontent");
 				    for (i = 0; i < tabcontent.length; i++) {
 				        tabcontent[i].style.display = "none";
@@ -417,11 +476,10 @@
 				    }
 				    document.getElementById(pageName).style.display = "block";
 				    elmnt.style.backgroundColor = color;
-
 				}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+				document.getElementById("defaultOpen").click();
+			</script>
+
 			<div class="contain contain-team-pic">
 				<h1 style="text-align:center;" class="section-heading">TEAM PICTURE</h1>
 				<img class="team-pic" src="img/recent_events.png" alt="team-pic">
@@ -478,6 +536,7 @@ document.getElementById("defaultOpen").click();
 				</div>
 				<img class="description-video" src="img/placeholder-2.png">
 			</div>-->
+
 			<style>
 			.big-selected-img{
 				width:100%;
@@ -485,9 +544,7 @@ document.getElementById("defaultOpen").click();
 			.biography-box{
 				background-color:silver;
 				width:100%;
-
 			}
-
 			</style>
 
 			<div class="partners">
@@ -506,35 +563,33 @@ document.getElementById("defaultOpen").click();
 				</div>
 			</div>
 
-
-		<style>
-
-			@media(max-width:768px){
-				.footer{
-					height:auto;
-					padding-bottom:200px;
+			<style>
+				@media(max-width:768px){
+					.footer{
+						height:auto;
+						padding-bottom:200px;
+					}
+					.contain-one-content{
+						width:100%;
+						padding-bottom:20px;
+						position:relative;
+					}
+					.contain-one-content > *{
+						display:block;
+						margin:auto;
+						text-align: center;
+						margin-bottom:3px;
+					}
+					.qr-code-img{
+						position:absolute;
+						left:0;
+						right:0;
+					}
 				}
-				.contain-one-content{
-					width:100%;
-					padding-bottom:20px;
-					position:relative;
-				}
-				.contain-one-content > *{
-					display:block;
-					margin:auto;
-					text-align: center;
-					margin-bottom:3px;
-				}
-				.qr-code-img{
-					position:absolute;
-					left:0;
-					right:0;
-				}
-			}
-		</style>
+			</style>
 
 
-		<div class="footer">
+			<div class="footer">
 					<h2 class="footer-h2" style="padding-left:40px; padding-right:40px">EYEducate is a non-profit organization based in Shanghai American School</h2>
 					<h2 class="footer-h2" style="padding-left:40px; padding-right:40px">We raise awareness about Ophthalmic Diseases and Disorders</h2>
 					<div class="row-footer" style="padding-left: 15%; padding-right: 15%; margin-top: 30px">
@@ -574,8 +629,9 @@ document.getElementById("defaultOpen").click();
 						</div>
 					</div>
 
-		<script src="scripts/jquery-3.2.1.js"/>f
-		<script src="scripts/bootstrap.min.js"></script>
+
+		<script src="scripts/jquery-3.2.1.js">
+		<script src="scripts/bootstrap.min.js">
 		<script src="scripts/jq.js"/>
 
 		<script>
@@ -584,5 +640,6 @@ document.getElementById("defaultOpen").click();
 				$(".contain-big-nav").css('left','0px');
 			});
 		</script>
+
 	</body>
 </html>
