@@ -551,25 +551,26 @@ text-align: center;
 					z-index:2;
 				}
 
-	#contact-link-footer{
-			text-decoration:none;
-			color:white;
-		}
-		#contact-link-footer:hover{
-			color:black;
-		}
+				#contact-link-footer{
+					text-decoration:none;
+					color:white;
+				}
+				#contact-link-footer:hover{
+					color:black;
+				}
 
 		.footer{
 			background-color:#434965;
 			bottom:0;
 			width:100%;
-			padding-top:60px;
-			padding-bottom:80px;
-			height:400px;
+			padding-top:10px;
+			padding-bottom:20px;
+			height:auto;
 		}
 		.footer img{
 			display:block;
-			margin:0px auto;		}
+			margin:auto;
+		}
 
 		.footer h2{
 			width:100%;
@@ -635,7 +636,6 @@ text-align: center;
 			width:150px;
 			height:150px;
 			position:relative;
-			float:right;
 		}
 
 
@@ -704,3 +704,4 @@ text-align: center;
 		.contain-media-article-row h2 {
 			margin-left: 0;
 		}
+		
