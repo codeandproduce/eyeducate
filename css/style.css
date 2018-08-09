@@ -628,10 +628,6 @@ text-align: center;
 			color:white;
 		}
 
-		.row-footer {
-
-
-		}
 		.qr-code-img {
 			width:150px;
 			height:150px;
@@ -704,4 +700,54 @@ text-align: center;
 		.contain-media-article-row h2 {
 			margin-left: 0;
 		}
-		
+
+		.footer-row{
+			margin-left:20%;
+			margin-right:20%;
+		}
+
+
+		@media(max-width:1300px){
+			.footer-row{
+				margin-left:10%;
+				margin-right:10%;
+			}
+		}
+
+		@media(max-width:1000px){
+			.footer h3{
+				text-align:center;
+			}
+			.footer p{
+				text-align:center;
+			}
+		}
+
+		@media(max-width:768px){
+			.footer-row{
+				margin-left:0%;
+				margin-right:0%;
+			}
+			.footer{
+				height:auto;
+			}
+			.contain-one-content{
+				width:100%;
+				position:relative;
+			}
+			.contain-one-content > *{
+				display:block;
+				margin:auto;
+				text-align: center;
+				margin-bottom:10px;
+			}
+			.qr-code-img{
+				position:absolute;
+				left:0;
+				right:0;
+			}
+			.qr-code-crap{
+				height:160px;
+				position:relative;
+			}
+		}
