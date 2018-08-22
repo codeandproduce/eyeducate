@@ -33,6 +33,9 @@ app.get('/our-story', (req, res) => {
 app.get('/join-us', (req, res) => {
 	res.sendFile(path.join(__dirname + '/join-us.html'));
 });
+app.get('/members-bio', (req, res) => {
+	res.sendFile(path.join(__dirname + '/members-bio.html'));
+});
 
 
 app.listen(port, () => {
