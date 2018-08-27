@@ -4,6 +4,9 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="scripts/jquery-3.3.1.min.js"></script>
+		<script src="scripts/bootstrap.min.js"></script>
+
 	</head>
 
 	<body>
@@ -148,7 +151,7 @@
 			</div>
 
 			<div class="nav-right" style="text-align: center;">
-				<img class="nav-toggle-logo" src="/img/nav_logo.png">
+				<img class="nav-toggle-logo" src="img/nav_logo.png">
 				<div class="nav-toggle-poem">
 				“No one has ever become poor by giving.” </br>
 				-Anne Frank
@@ -171,16 +174,16 @@
 
 		<div class="nav" style="z-index:2;">
 			<div class="logo_center">
-				<img class="nav_logo" src="/img/nav_logo.png">
+				<img class="nav_logo" src="img/nav_logo.png">
 			</div>
 			<div class="social-right">
-				<a href="https://youtube.com"><img class="social-youtube" src="/img/social_youtube.png"></a>
+				<a href="https://youtube.com"><img class="social-youtube" src="img/social_youtube.png"></a>
 				<div class="social-wechat-popup">
- 					<img class="social-wechat" src="/img/social_wechat.png"/>
- 					<img class="social-qr-code" src="/img/qr_code.png"/>
+ 					<img class="social-wechat" src="img/social_wechat.png"/>
+ 					<img class="social-qr-code" src="img/qr_code.png"/>
 				</div>
-				<a href="mailto:sas.eyeducate@gmail.com"><img class="social-email" src="/img/social_email.png"></a>
-				<a href="https://instagram.com/eyeducate"><img class="social-insta" src="/img/social_insta.png"></a>
+				<a href="mailto:sas.eyeducate@gmail.com"><img class="social-email" src="img/social_email.png"></a>
+				<a href="https://instagram.com/eyeducate"><img class="social-insta" src="img/social_insta.png"></a>
 			</div>
 		</div>
 
@@ -258,8 +261,8 @@
 				margin:auto;
 				display:block;
 				padding:10px;
-				margin-bottom:10px;
-				margin-top:10px;
+				margin-bottom:50px;
+				margin-top:50px;
 			}
 			@media(max-width:410px){
 				.profile-slide{
@@ -286,11 +289,13 @@
 			<style>
 			.exec-name{
 				text-align:center;
-				margin-top:10px;
+				margin-top:5px;
 				margin-bottom:0px;
 				font-size:24px;
 				font-weight:bold;
 				letter-spacing:3px;
+				display:block;
+
 			}
 			.exec-title{
 				text-align:center;
@@ -313,158 +318,171 @@
 					font-size:18px;
 				}
 			}
+			.popupbio{
+				display:block;
+				margin:auto;
+				background-color:white;
+				margin-top:5px;
+				margin-bottom:10px;
+			}
 			</style>
+
 			<div id="Executives" class="tabcontent">
 				<div class="row">
 					<div class="col-md-4 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<h1 class="exec-name">Bob Thompson</h1>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<a class="exec-name" href="members-bio-bridgetp.html">Bridget Lv</a>
 						<h3 class="exec-title">Founder & President</h3>
 					</div>
 					<div class="col-md-4 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
 						<h2 class="temp-quote">"A Lovely Quote"</h3>
 					</div>
 					<div class="col-md-4 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<h1 class="exec-name">Bob Thompson</h1>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+			<a class="exec-name" href="members-bio-rachelvp.html">Rachel Hsu</a>
 						<h3 class="exec-title">Vice President</h3>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<h1 class="exec-name">Bob Thompson</h1>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+							<a class="exec-name" href="members-bio-jennys.html">Jenny Lee</a>
 					</div>
 					<div class="col-md-4 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<h1 class="exec-name">Bob Thompson</h1>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+							<a class="exec-name" href="members-bio-dorothypr.html">Dorothy Li</a>
 					</div>
 					<div class="col-md-4 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<h1 class="exec-name">Bob Thompson</h1>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<a class="exec-name" href="members-bio-annikat.html">Annika Wang</a>
 					</div>
 				</div>
 			</div>
 			<div id="Members" class="tabcontent">
 				<div class="row">
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
-					</div>
-					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
-					</div>
-					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
-					</div>
-					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
-					</div>
-					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
-					</div>
-					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 					<div class="col-md-2 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
-						<p style="text-align:center;">Name</p>
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
+					</div>
+					<div class="col-md-2 icon-person">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
+						<button class="popupbio" type="button" data-toggle="popover" title="Sabrina Jia's Biography" data-trigger="hover"  data-content="My name is Sabrina, I’m a student at Shanghai American School, and I am a member of EYEducate. I love to dance, draw, and listen to music. I also like to work with children. As a member of this club, I participate in many events, such as the music festival where we went on stage to spread awareness about protecting one’s eyes. I joined this club because I want to spread awareness for eye protection. I believe that our society is becoming more dependent on technology and the time spent on electronic devices have been increasing, which may do some damage to children’s eyes. The best way I can contribute to solving this problem is by joining this club and teaching children how to protect their eyes." data-placement="right">Name</a>
 					</div>
 				</div>
 			</div>
 			<div id="Constitution" class="tabcontent">
 				<div class="row">
 					<div class="col-md-3 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
 						<h4 style="text-align:center;">Name</h4>
 					</div>
 					<div class="col-md-3 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
 						<h4 style="text-align:center;">Name</h4>
 					</div>
 					<div class="col-md-3 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
 						<h4 style="text-align:center;">Name</h4>
 					</div>
 					<div class="col-md-3 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
 						<h4 style="text-align:center;">Name</h4>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-3 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
 						<h4 style="text-align:center;">Name</h4>
 					</div>
 					<div class="col-md-3 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
 						<h4 style="text-align:center;">Name</h4>
 					</div>
 					<div class="col-md-3 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
 						<h4 style="text-align:center;">Name</h4>
 					</div>
 					<div class="col-md-3 icon-person">
-						<img class="temp-resize-1" src="/img/placeholder-1.png" alt="me funny, you not">
+						<img class="temp-resize-1" src="img/placeholder-1.png" alt="me funny, you not">
 						<h4 style="text-align:center;">Name</h4>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script>
+		$(document).ready(function(){
+		    $('[data-toggle="popover"]').popover({container: 'body'});
+		});
+		</script>
 
 			<script>
 				function openPage(pageName,elmnt,color) {
@@ -483,62 +501,11 @@
 				document.getElementById("defaultOpen").click();
 			</script>
 
+
 			<div class="contain contain-team-pic">
 				<h1 style="text-align:center;" class="section-heading">TEAM PICTURE</h1>
-				<img class="team-pic" src="/img/recent_events.png" alt="team-pic">
+				<img class="team-pic" src="img/recent_events.png" alt="team-pic">
 			</div>
-
-			<!--<div style="padding-bottom:30px" class="profile-description">
-				<div class="row description-detail">
-					<div class="col-md-5">
-						<img class="big-selected-img" src="/img/placeholder-1.png">
-						<div class="biography-box">
-							<h2>My Highlights</h2>
-							<ul>
-								<li>Hello</li>
-								<li>Hello</li>
-								<li>Hello</li>
-								<li>Hello</li>
-							</ul>
-						</div>
-						<h1>WHY I JOINED</h1>
-					</div>
-					<div class="col-md-7">
-						<h1>Chan Woo Kim</h1>
-						<h2 style="font-size:20px">Title: Member</h2>
-						<div class="biography-box">
-							<p style="font-size:16px;">
-							BIOGRAPHY:
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-							aliquam metus ut justo fermentum sodales. In porttitor et metus
-							eget sollicitudin. Proin in mi odio. Etiam congue sem in dui
-							egestas congue. Cras vestibulum purus eu ante consequat, et ornare
-							leo egestas. Vivamus mauris massa, auctor vel leo quis, imperdiet
-							euismod ante. Maecenas tempus libero velit, a hendrerit ligula
-							efficitur eu. 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-							aliquam metus ut justo fermentum sodales. In porttitor et metus
-							eget sollicitudin. Proin in mi odio. Etiam congue sem in dui
-							egestas congue. Cras vestibulum purus eu ante consequat, et ornare
-							leo egestas. Vivamus mauris massa, auctor vel leo quis, imperdiet
-							euismod ante. Maecenas tempus libero velit, a hendrerit ligula
-							efficitur eu. 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-								aliquam metus ut justo fermentum sodales. In porttitor et metus
-								eget sollicitudin. Proin in mi odio. Etiam congue sem in dui
-								egestas congue. Cras vestibulum purus eu ante consequat, et ornare
-								leo egestas. Vivamus mauris massa, auctor vel leo quis, imperdiet
-								euismod ante. Maecenas tempus libero velit, a hendrerit ligula
-								efficitur eu. 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-								aliquam metus ut justo fermentum sodales. In porttitor et metus
-								eget sollicitudin. Proin in mi odio. Etiam congue sem in dui
-								egestas congue. Cras vestibulum purus eu ante consequat, et ornare
-								leo egestas. Vivamus mauris massa, auctor vel leo quis, imperdiet
-								euismod ante. Maecenas tempus libero velit, a hendrerit ligula
-								efficitur eu.</p>
-						</div>
-					</div>
-				</div>
-				<img class="description-video" src="/img/placeholder-2.png">
-			</div>-->
 
 			<style>
 			.big-selected-img{
@@ -548,27 +515,26 @@
 				background-color:silver;
 				width:100%;
 			}
+			.eyelovepics{
+				width:80%;
+			}
 			</style>
 
 			<div class="partners">
 				<h1 class="partners-heading section-heading">PARTNERS</h1>
 				<div class="eye-love">
-					<img src="/img/eye_love.png">
-					<p class="eye-love-description">
+					<img class="eyelovepics" src="img/eye_love.png">
+					<h4 class="eye-love-description">
 						Eye Love Vision Fund • 看见爱视光基金
 					</p>
 				</div>
 				<div class="other-partners">
-					<img src="/img/other_partners.png">
-					<p class="safe-kids-description">
+					<img class="eyelovepics" src="img/other_partners.png">
+					<h4 class="safe-kids-description">
 						Safe Kids China • 全国儿童安全组织
 					</p>
 				</div>
 			</div>
-
-			<style>
-
-			</style>
 
 
 			<div class="footer">
@@ -605,7 +571,7 @@
 			      </div>
 			      <div class="col-md-6">
 			        <div class="qr-code-crap">
-			          <img src="/img/qr_code.png" class="qr-code-img">
+			          <img src="img/qr_code.png" class="qr-code-img">
 			        </div>
 			      </div>
 			    </div>
@@ -614,9 +580,9 @@
 			</div>
 
 
-		<script src="scripts/jquery-3.2.1.js">
-		<script src="scripts/bootstrap.min.js">
-		<script src="scripts/jq.js"/>
+		<script src="scripts/jquery-3.2.1.js"></script>
+		<script src="scripts/bootstrap.min.js"></script>
+		<script src="scripts/jq.js"/></script>
 
 		<script>
 			$("#menu_button").click(function(){
