@@ -13,7 +13,7 @@ app.get('/', (req, res)=>{
 	res.sendFile(path.join(__dirname + '/index.html'));
 });
 app.get('/about', (req, res)=>{
-	res.sendFile(path.join(__dirname + '/about-us.html'));
+	res.sendFile(path.join(__dirname + '/about-us-update.html'));
 })
 
 app.get('/events', (req, res)=>{

@@ -46,9 +46,9 @@
       <div class="nav-content nav-left" style="text-align: center; height: 100%">
         <ol style="list-style: none; padding: 0" class="contain-toggle-nav-links">
           <li><a href="/"><i>Home</i></a></li>
-          <li><a href="/about"><i class="current-page">About Us</i></a></li>
+          <li><a href="/about"><i>About Us</i></a></li>
           <li><a href="/our-story"><i>Our Story</i></a></li>
-          <li><a href="/events"><i>Events</i></a></li>
+          <li><a href="/events"><i class="current-page">Our Events & Projects</i></a></li>
           <li><a href="/eye-news"><i>EYE news</i></a></li>
           <li><a href="/media"><i>Media</i></a></li>
         </ol>
@@ -285,6 +285,35 @@
 		}
       </style>
 
+<div class="container">
+      <h1 class="break-title" style="margin-top:40px">WHERE WE'VE GONE</h1>
+
+          <div id="map" style="margin-top: 40px"></div>
+        <script>
+
+            function initMap() {
+                let map = new google.maps.Map(document.getElementById("map"), {
+                    center: {lat:31.204601, lng: 121.280884},
+                    zoom: 6,
+                    mapTypeId: 'roadmap'
+                });
+                var contentString = 'hi';
+                  var infowindow = new google.maps.InfoWindow({
+                  content: contentString
+                });
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: {lat: 31.204601, lng:  121.280884}
+                });
+                marker.addListener('click', function() {
+                     infowindow.open(map, marker);
+                });
+               }
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD060HFRs8E27SDasFfhGqMiD5cKrzau74&callback=initMap"></script>
+
+</div>
 
       <div class="contain-break">
         <div class="row" style="margin-bottom:5%;">
@@ -458,35 +487,7 @@ hr {
 
         </style>
 
-<div class="container">
-      <h1 class="break-title">WHERE WE'VE GONE</h1>
 
-	        <div id="map"></div>
-        <script>
-
-            function initMap() {
-                let map = new google.maps.Map(document.getElementById("map"), {
-                    center: {lat:31.204601, lng: 121.280884},
-                    zoom: 6,
-                    mapTypeId: 'roadmap'
-                });
-                var contentString = 'hi';
-                  var infowindow = new google.maps.InfoWindow({
-                  content: contentString
-                });
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: {lat: 31.204601, lng:  121.280884}
-                });
-                marker.addListener('click', function() {
-                     infowindow.open(map, marker);
-                });
-               }
-
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD060HFRs8E27SDasFfhGqMiD5cKrzau74&callback=initMap"></script>
-
-</div>
 
     <style>
     </style>

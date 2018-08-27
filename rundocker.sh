@@ -3,4 +3,4 @@ docker run \
 	-w /src \
 	-e PORT=2986 \
 	-p 2986:2986 \
-	-d ornt-note
+	-d node-basic
