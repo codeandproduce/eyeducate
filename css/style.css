@@ -751,3 +751,7 @@ text-align: center;
 				position:relative;
 			}
 		}
+
+		.row-footer > .col-sm-6{
+			padding:0;
+		}
