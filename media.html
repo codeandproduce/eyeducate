@@ -201,18 +201,31 @@
       color:black;
       transform: translateY(-50%);
     }
+    .media-bar{
+      width:100%;
+      display:inline-block;
+      margin:auto;
+      padding-top:150px;
+      padding-bottom:150px;
+    }
+
+		.media-center{
+			margin:auto;
+			display:block;
+			padding:10px;
+		}
+
 
     </style>
     <!--Main Content !-->
-    <div class="contain">
   		<div class="media-bar">
   			<div class="col-md-6">
-  				<button class="membar-center h1 tablink section-heading" onclick="openPage('Executives',this, 'silver')"id="defaultOpen">Media</button>
+  				<button class="media-center h1" onclick="openPage('Executives',this, 'silver')"id="defaultOpen">Media</button>
   			</div>
   			<div class="col-md-6">
-  				<button class="membar-center h1 tablink section-heading" onclick="openPage('Members',this, 'silver')" id="defaultOpen">Recognition</button>
+  				<button class="media-center h1" onclick="openPage('Members',this, 'silver')" id="defaultOpen">Recognition</button>
   			</div>
-  		</div>
+
       <div class="contain-video">
         <iframe class="video"
         src="https://www.youtube.com/embed/CthgZHM7eyI">
