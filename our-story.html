@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
       .contain-one-block{
-        padding:0;
-        height:300px;
+        padding:10px;
+        height:50%;
+
       }
       .our-story-heading{
         margin-left:15%; font-size: 30px; padding-bottom:30px; color:#75798e;
@@ -120,7 +121,7 @@
     </div>
 
     <div class="nav-right" style="text-align: center;">
-      <img class="nav-toggle-logo" src="/img/nav_logo.png">
+      <img class="nav-toggle-logo" src="img/nav_logo.png">
       <div class="nav-toggle-poem">
       “No one has ever become poor by giving.” </br>
       -Anne Frank
@@ -147,16 +148,16 @@
   <div class="nav">
 
     <div class="logo_center">
-      <img class="nav_logo" src="/img/nav_logo.png">
+      <img class="nav_logo" src="img/nav_logo.png">
     </div>
     <div class="social-right">
-      <a href="https://www.youtube.com/channel/UC-g8v0W5j-sfYm_XhehTUjg"><img class="social-youtube" src="/img/social_youtube.png"></a>
+      <a href="https://www.youtube.com/channel/UC-g8v0W5j-sfYm_XhehTUjg"><img class="social-youtube" src="img/social_youtube.png"></a>
         <div class="social-wechat-popup">
-          <img class="social-wechat" src="/img/social_wechat.png"/>
-          <img class="social-qr-code" src="/img/qr_code.png"/>
+          <img class="social-wechat" src="img/social_wechat.png"/>
+          <img class="social-qr-code" src="img/qr_code.png"/>
         </div>
-        <a href="mailto:sas.eyeducate@gmail.com"><img class="social-email" src="/img/social_email.png"></a>
-        <a href="https://instagram.com/eyeducate"><img class="social-insta" src="/img/social_insta.png"></a>
+        <a href="mailto:sas.eyeducate@gmail.com"><img class="social-email" src="img/social_email.png"></a>
+        <a href="https://instagram.com/eyeducate"><img class="social-insta" src="img/social_insta.png"></a>
     </div>
   </div>
   <!-- ! -->
@@ -167,8 +168,8 @@
       z-index:6;
     }
     .our-story-pic{
-      height:100%;
-      width:auto;
+      width:100%;
+
       display:block;
       margin:auto;
 
@@ -181,15 +182,19 @@
     .contain-two{
       margin-bottom:40px;
     }
+    .our-story-main{
+      width:100%;
+    }
     </style>
     <!--Main Content !-->
     <div class="our-story">
       <h1 class="our-story-heading"> OUR STORY </h1>
-      <div class="row contain-two">
-        <div class="col-md-6 contain-one-block">
-          <p class="our-story-description">Based in Shanghai American School, Eyeducate
-          raises awareness about the prevalent issue of myopia
-          and hyperopia (nearsigntness/farsightedness) which affects
+      <div class="our-story-main">
+      <div class="row">
+        <div class="col-md-7 contain-one-block">
+          <p class="our-story-description" style="font-size:22px; display:block;">Based in Shanghai American School, Eyeducate
+          raises awareness about the prevalent issue of myopia (nearsightedness)
+          and hyperopia (farsightedness) which affects
           approximately 3.5 billion people today. As the use of technology
           is becoming ubiquitous in our lives, it is truly important for
           younger students to be educated about proper methods to protect
@@ -197,22 +202,23 @@
           as educated about this topic, therefore, it is our goal to take this matter
           into our own hands.</p>
         </div>
-        <div class="col-md-6 contain-one-block">
-          <img src="/img/launch-class.jpg" class="our-story-pic">
+        <div class="col-md-5 contain-one-block">
+          <img src="img/launch-class.jpg" class="our-story-pic">
         </div>
       </div>
 
       <div class="row contain-two">
-        <div class="col-md-6 contain-one-block">
-          <img id="disappear" src="/img/launch-class.jpg" class="our-story-pic" >
+        <div class="col-md-5 contain-one-block">
+          <img id="disappear" src="img/launch-class.jpg" class="our-story-pic" >
         </div>
-        <div class="col-md-6 contain-one-block">
-          <p class="our-story-description">Currently, EYEducate works directly with the Eye Love Vision Fund, a registered organization that
+        <div class="col-md-7 contain-one-block">
+          <p class="our-story-description" style="font-size:22px">Currently, EYEducate works directly with the Eye Love Vision Fund, a registered organization that
           has specifically designed a bilingual lesson to be taught to students around six years old, along with the support
           of Safe Kids China, a sub-branch of Safe Kids Worldwide and the Beijing United Charity Foundation to both teach students
           about how to protect their eyesight and to donate eye protection lesson toolkits to schools in rural China.</p>
         </div>
       </div>
+    </div>
     </div>
 
     <script src="scripts/jquery-3.2.1.js"/>
@@ -273,7 +279,7 @@
           </div>
           <div class="col-md-6">
             <div class="qr-code-crap">
-              <img src="/img/qr_code.png" class="qr-code-img">
+              <img src="img/qr_code.png" class="qr-code-img">
             </div>
           </div>
         </div>
