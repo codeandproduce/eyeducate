@@ -184,21 +184,34 @@
          .contains-video{
              margin: auto;
              width: 80%;
-             height:400px;
+             height:100%;
              margin-top:10%;
              margin-bottom:10%;
+         }
+         .contains-small-video{
+            margin:auto;
+            height:100%;
          }
          .section-heading{
             color:black;
          }
          .contain-awards{
-            margin-top:10%;
-            margin-bottom:10%;
+            margin-top:4%;
+            margin-bottom:4%;
          }
-      .events-image{
-			width:80%;
-			height:90%;
-		}
+         .events-image{
+			   width:80%;
+			   height:90%;
+         }
+         .media-slide{
+            display: inline-block;
+            margin: auto;
+            width: 100%;
+         }
+         iframe {
+            width: 100%;
+            height: 100%;
+         }
          @media screen and (max-width: 600px) {
          .column {
          width: 100%;
@@ -218,11 +231,12 @@
          font-size:15px;
          }
          }
+
       </style>
 
 
 
-      <div class="contain profile-slide">
+      <div class="contain media-slide">
          <div class="row nav-bar">
             <div class="col-md-6" style="text-align:center;">
                <button class="nav-bar-center h1 tablink section-heading" onclick="openPage('Media',this, 'silver')"id="defaultOpen">MEDIA</button>
@@ -233,47 +247,63 @@
          </div>
          <div id="Media" class="tabcontent">
             <div class="contains-video">
-               <iframe width="100%" height="100%"
+               <h2 style="text-align:center;">EYEducate's Vision</h2>
+               <iframe
                   src="https://www.youtube.com/embed/CthgZHM7eyI">
                </iframe>
             </div>
-            <div class="row">
+            <div class="contains-small-video">
                <div class="col-md-6">
-                  <h2 >WHO WE ARE</h2>
-                  <img class="events-image" src="/img/recent_events.PNG">
+                  <h2>Who We Are</h2>
+                  <iframe
+                  src="https://www.youtube.com/embed/86CMRNytFJ0">
+                  </iframe>
                </div>
                <div class="col-md-6">
-                  <h2>WHO WE ARE</h2>
-                  <img class="events-image" src="/img/recent_events.PNG">
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-6">
-                  <h2>Smth</h2>
-                  <img class="events-image" src="/img/recent_events.PNG">
-               </div>
-               <div class="col-md-6">
-                  <h2>Smth</h2>
-                  <img class="events-image" src="/img/recent_events.PNG">
-
+                  <h2>EYEducate on KNews // 看看新闻</h2>
+                  <iframe
+                     src="https://www.youtube.com/embed/0htduLOnd6E">
+                  </iframe>
                </div>
             </div>
          </div>
+         </div>
          <div id="awards" class="tabcontent">
-            <div class="contain-awards">
-               <h1 class="section-heading"><u>AWARDS/荣誉</u></h1>
+            <div class="contain-awards" style="padding-right:10%; padding-left:10%;">
+               <h1 class="section-heading" style="text-align:center;"><u>AWARDS/荣誉</u></h1>
+               <p> 
+                  <br> <br> <br> 
+                  October 2018 - 1st Place at Youth Volunteer Service Creativity Contest (青少年志愿者服务创意大赛)
+                  <br> <br> 
+                  November 2017 - Interview by Shanghai Student (上海中学生报) Newspaper 
+                  <br> <br> 
+                  September 2017 - Top 10 Charity Stories of Shanghai (公益之申): Presented by the Shanghai Municipal Government, Shanghai Media Group
+                  <br> <br> 
+                  December 2015 - Interview by Shanghai Student (上海中学生报) Newspaper 
+                  <br> <br>
+                  September 2015 - Interview by Shanghai Youth Daily
+                  <br> <br> 
+               </p>
             </div>
-
-            <div class="contain-reconitions">
-            <h1 class="section-heading"><u>RECOGNITIONS/媒体认可</u></h1>
+            <div class="contain-reconitions" style="padding-right:10%; padding-left:10%;">
+            <h1 class="section-heading" style="text-align:center;"><u>RECOGNITIONS/媒体认可</u></h1>
+            <p>
+               <br> <br> <br>
+               http://www.kankanews.com/a/2017-08-10/0018106427.shtml
+               <br> <br>
+               http://www.cnr.cn/shanghai/tt/20170916/t20170916_523952140.shtml
+               <br> <br>
+               http://news.sina.com.cn/c/2017-09-16/doc-ifykyfwq7826396.shtml
+               <br> <br>
+            </p>
             <div class="row">
                <div class="col-md-6">
-                  <h2>source</h2>
-                  <img class="events-image" src="/img/recent_events.PNG">
+                  <h3>Interview by China Youth Daily</h3>
+                  <img class="events-image" src="/img/newsarticle.jpg">
                </div>
                <div class="col-md-6">
-                  <h2>source</h2>
-                  <img class="events-image" src="/img/recent_events.PNG">
+                  <h3>2017 Top 10 Charities of Shanghai</h3>
+                  <img class="events-image" src="/img/randommedia.jpg">
             </div>
          </div>
       </div>
