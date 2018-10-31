@@ -73,42 +73,41 @@ app.get('/events/:event_title', (req, res) => {
 		case "events-interviewchinayouthdaily":
 			res.sendFile(path.join(__dirname + '/events/events-interviewchinayouthdaily.html'));
 			break;
-			case "events-intfair2015":
-			res.sendFile(path.join(__dirname+'/events-intfair2015.html'));
+		case "events-intfair2015":
+			res.sendFile(path.join(__dirname+'/events/events-intfair2015.html'));
 			break;
 		case "events-intfair2016":
-		break;
-			res.sendFile(path.join(__dirname+'/events-intfair2016.html'));
+			res.sendFile(path.join(__dirname+'/events/events-intfair2016.html'));
 			break;
 		case "events-intfair2017":
-			res.sendFile(path.join(__dirname+'/events-intfair2017.html'));
+			res.sendFile(path.join(__dirname+'/events/events-intfair2017.html'));
 			break;
-			case "events-intfair2018":
-			res.sendFile(path.join(__dirname+'/events-intfair2018.html'));
+		case "events-intfair2018":
+			res.sendFile(path.join(__dirname+'/events/events-intfair2018.html'));
 			break;
-			case "events-musicfestival2016":
-			res.sendFile(path.join(__dirname+'/events-musicfestival2016.html' ));
+		case "events-musicfestival2016":
+			res.sendFile(path.join(__dirname+'/events/events-musicfestival2016.html'));
 			break;
-			case "events-new-volunteers":
-			res.sendFile(path.join(__dirname+'/events-new-volunteers.html' ));
+		case "events-new-volunteers":
+			res.sendFile(path.join(__dirname+'/events/events-new-volunteers.html' ));
 			break;
-			case "events-peacock-kindergarden":
-			res.seneFile(path.join(__dirname+'/events-peacock-kindergarden.html'));
+		case "events-peacock-kindergarden":
+			res.seneFile(path.join(__dirname+'/events/events-peacock-kindergarden.html'));
 			break;
-			case "events-sampleclass":
-			res.sendFile(path.join(__dirname+'/events-sampleclass.html'));
+		case "events-sampleclass":
+			res.sendFile(path.join(__dirname+'/events/events-sampleclass.html'));
 			break;
-			case "events-shsid":
-			res.sendFile(path.join(__dirname+'/events-shsid.html'));
+		case "events-shsid":
+			res.sendFile(path.join(__dirname+'/events/events-shsid.html'));
 			break;
-			case "events-songjiang":
-			res.sendFile(path.join(__dirname+'/events-songjiang.html'));
+		case "events-songjiang":
+			res.sendFile(path.join(__dirname+'/events/events-songjiang.html'));
 			break;
-			case "events-worldmusicfestival2016";
-			res.sendFile(path.join(__dirname+'/events-worldmusicfestival2016.html'));
+		case "events-worldmusicfestival2016":
+			res.sendFile(path.join(__dirname+'/events/events-worldmusicfestival2016.html'));
 			break;
-			case "events-xiangyang":
-			res.sendFile(path.join(__dirname+'/events-xiangyang.html'));
+		case "events-xiangyang":
+			res.sendFile(path.join(__dirname+'/events/events-xiangyang.html'));
 			break;
 	}
 });
