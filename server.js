@@ -38,6 +38,14 @@ app.get('/members-bio', (req, res) => {
 });
 
 
+app.get('/events/:event_title', (req, res) => {
+	switch (req.params.event_title){
+		case "events-mycar": 
+			res.sendFile(path.join(__dirname + '/mycar'))
+		case "article-poop":
+	}
+});
+
 app.listen(port, () => {
 	console.log("running!");
 });
