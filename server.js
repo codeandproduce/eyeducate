@@ -40,9 +40,39 @@ app.get('/members-bio', (req, res) => {
 
 app.get('/events/:event_title', (req, res) => {
 	switch (req.params.event_title){
-		case "events-mycar": 
-			res.sendFile(path.join(__dirname + '/mycar'))
-		case "article-poop":
+		case "events-1stlesson":
+			res.sendFile(path.join(__dirname + '/events/events-1stlesson.html'));
+			break;
+		case "events-9-23-2017":
+			res.sendFile(path.join(__dirname + '/events/events-9-23-2017.html'))
+			break;
+		case "events-bailian":
+			res.sendFile(path.join(__dirname + '/events/events-bailian.html'))
+			break;
+		case "events-celebrate-3-years":
+			res.sendFile(path.join(__dirname + '/events/events-celebrate-3-years.html'))
+			break;
+		case "events-creativity-contest":
+			res.sendFile(path.join(__dirname + '/events/events-creativity-contest.html'))
+			break;
+		case "events-duolunstreet":
+			res.sendFile(path.join(__dirname + '/events/events-duolunstreet.html'))
+			break;
+		case "events-eyekitlaunch":
+			res.sendFile(path.join(__dirname + '/events/events-eyekitlaunch.html'))
+			break;
+		case "events-founderbridget": 
+			res.sendFile(path.join(__dirname + '/events/events-founderbridget.html'))
+			break;
+		case "events-fudan":
+			res.sendFile(path.join(__dirname + '/events/events-fudan.html'))
+			break;
+		case "events-interview-newspaper": 
+			res.sendFile(path.join(__dirname + '/events/events-interview-newspaper.html'))
+			break;
+		case "events-interviewchinayouthdaily":
+			res.sendFile(path.join(__dirname + '/events/events-interviewchinayouthdaily.html'))
+			break;
 	}
 });
 
