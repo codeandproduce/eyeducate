@@ -112,6 +112,23 @@ app.get('/events/:event_title', (req, res) => {
 	}
 });
 
+app.get('/articles/:article_title', (req, res) => {
+	switch (req.params.article_title){
+		case "article-carrots":
+			res.sendFile(path.join(__dirname+'/articles/article-carrots.html'));
+			break;
+		case "article-eyemakeup":
+			res.sendFile(path.join(__dirname+'/articles/article-eyemakeup.html'));
+			break;
+		case "article-glassescontacts":
+			res.sendFile(path.join(__dirname+'/articles/article-glassescontacts.html'));
+			break;
+		case "article-lasersurgery":
+			res.sendFile(path.join(__dirname+'/articles/article-lasersurgery.html'));
+			break;
+	}
+});
+
 app.listen(port, () => {
 	console.log("running!");
 });
