@@ -126,6 +126,8 @@ app.get('/articles/:article_title', (req, res) => {
 		case "article-lasersurgery":
 			res.sendFile(path.join(__dirname+'/articles/article-lasersurgery.html'));
 			break;
+		case "article-4tips":
+			res.sendFile(path.join(__dirname+'/articles/article-4tips.html'));
 	}
 });
 
