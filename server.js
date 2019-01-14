@@ -109,6 +109,9 @@ app.get('/events/:event_title', (req, res) => {
 		case "events-xiangyang":
 			res.sendFile(path.join(__dirname+'/events/events-xiangyang.html'));
 			break;
+		case "events-baoli":
+			res.sendFile(path.join(__dirname+'/events/events-baoli.html'));
+			break;
 	}
 });
 
@@ -128,6 +131,10 @@ app.get('/articles/:article_title', (req, res) => {
 			break;
 		case "article-4tips":
 			res.sendFile(path.join(__dirname+'/articles/article-4tips.html'));
+			break;
+		case "article-book":
+			res.sendFile(path.join(__dirname+'/articles/article-book.html'));
+			break;
 	}
 });
 
