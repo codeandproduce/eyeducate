@@ -135,6 +135,9 @@ app.get('/articles/:article_title', (req, res) => {
 		case "article-book":
 			res.sendFile(path.join(__dirname+'/articles/article-book.html'));
 			break;
+		case "article-lasik":
+			res.sendFile(path.join(__dirname+'/articles/article-lasik.html'));
+			break;
 	}
 });
 
